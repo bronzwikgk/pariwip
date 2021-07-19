@@ -1,0 +1,53 @@
+.ui-messageBox__wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2002;
+    background-color: var(--messageBox-wrapper-background-color);
+  }
+  .ui-messageBox {
+    position: relative;
+    min-width: 400px;
+    padding: rem(12) rem(14);
+    background-color: var(--messageBox-background-color);
+    border: 1px solid border-base;
+    border-radius: var(--messageBox-border-radius);
+    z-index: 2000;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    .ui-messageBox {
+      min-width: 336px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .ui-messageBox {
+      min-width: 240px;
+    }
+  }
+  .ui-messageBox .button-close {
+    width: rem(22);
+    height: rem(22);
+  }
+  .ui-messageBox__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: rem(8);
+    margin-bottom: rem(8);
+  }
+  .ui-messageBox__content {
+    margin-bottom: rem(16);
+  }
+  .ui-messageBox__footer {
+    text-align: right;
+  }
+  .messageBox-title {
+    font-size: var(--messageBox-title-font-size);
+  }
+  

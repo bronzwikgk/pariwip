@@ -1,0 +1,28 @@
+.ui-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--table-background-color);
+    line-height: var(--table-line-height);
+    transition: var(--mainTransition);
+  }
+  .ui-table td {
+    padding: var(--table-td-padding);
+    border-bottom: 1px solid var(--border-lighter);
+  }
+  .ui-table td:first-child {
+    padding-right: 20px;
+  }
+  .ui-table thead th {
+    padding: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .ui-table thead:first-child {
+    padding-left: 20px;
+  }
+  .ui-table.ui-table--hover tbody tr:hover {
+    background-color: var(--border-lightex);
+  }
+  

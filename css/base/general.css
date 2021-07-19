@@ -1,0 +1,148 @@
+html {
+    line-height: var(--main-line-height);
+    font-size: var(--main-font-size);
+    color: var(--main-font-color);
+}
+
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+body {
+    font-family: var(--main-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: var(--main-font-size);
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+section,
+.section {
+    position: relative;
+    padding: 54px 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+    section,
+    .section {
+        padding: 36px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    section,
+    .section {
+        padding: 22px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    section,
+    .section {
+        padding: 16px 0;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--desktop-width);
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.content-wrapper.content-wrapper--sidebar {
+    padding-left: 240px;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .content-wrapper.content-wrapper--sidebar {
+        padding-left: 56px;
+        padding-bottom: 0;
+    }
+}
+
+.content-wrapper.content-wrapper--fix-header {
+    padding-top: 80px;
+}
+
+.container {
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    max-width: var(--desktop-width);
+    margin: 0 auto;
+    padding: 0rem;
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        max-width: var(--table-width);
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: var(--phone-width);
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: var(--sm-phone-width);
+        padding: 0rem;
+    }
+}
+
+.container.container--small {
+    max-width: var(--table-width);
+}
+
+@media screen and (max-width: 980px) {
+    .container.container--small {
+        max-width: var(--phone-width);
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.center {
+    text-align: center;
+}

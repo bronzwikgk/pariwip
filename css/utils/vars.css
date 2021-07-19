@@ -1,0 +1,122 @@
+:root {
+  /* Breakpoints */
+  --desktop-width: 1280px;
+  --sm-desktop-width: 980px;
+  --tab-width: 768px;
+  --phone-width: 480px;
+  --sm-phone-width: 320px;
+
+  /* Colors */
+  --primary-color: #444ce0;
+  --success-color: #26de81;
+  --danger-color: #fc5c65;
+  --warning-color: #fed330;
+  /* --neutral-primary-color: #303133;
+  --neutral-secondary-color: #909399; */
+  --black-color: #000000;
+  --xtra-dark-color: #111111;
+  --darker-color: #262626;
+  --dark-color: #383838;
+  --regular-dark-color: #5e5e5e;
+  --regular-color: #777777;
+  --regular-light-color: #a1a1a1;
+  --light-color: #c5c5c5;
+  --lighter-color: #e0e0e0;
+  --xtra-light-color: #f1f1f1;
+  --white-color: #ffffff;
+  /* --placeholder-color: #cccccc; */
+  --purple-color: #8854d0;
+  --pink-color: #ff2de3;
+  --red-color: #ff0000;
+  --green-color: #00ff00;
+  --blue-color: #0000ff;
+  --yellow-color: #ffff00;
+
+  /* Font */
+  /* style */
+  --montserrat-font: 'Montserrat', Helvetica, Arial, sans-serif;
+  /* Size */
+  --big-font-size: 18px;
+  --normal-font-size: 16px;
+  --small-font-size: 14px;
+  --title-1-font-size: 50px;
+  --title-2-font-size: 40px;
+  --title-3-font-size: 30px;
+  --title-4-font-size: 24px;
+  /* Line Size*/
+  --default-line-height: 1.4;
+
+  /* Animation */
+  --transition-1: all .25s cubic-bezier(.02, .01, .47, 1);
+
+  /* Buttons */
+  --button-padding: .4em 1em;
+  --button-color: #fff;
+  --button-font-size: 18px;
+  /* Round */
+  --button--round-border-radius: 1.2em;
+
+  /* Alert */
+  --alert-padding: .42em .4em;
+  --alert-margin-bottom: 1em;
+  --alert-border-radius: .6em;
+  --alert-opacity: .7;
+
+  /* Tag */
+  --tag-padding: .4em 1em;
+  --tag-border-radius: .9em;
+  --tag-opacity: .7;
+
+  /* Card */
+  --card-border-radius: .6em;
+  --card-padding: rem(30);
+  --card-background-color: #fff;
+
+  /* Form Elements */
+  --form-width: 100%;
+  --form-height: rem(40);
+  --form-padding: rem(10) rem(14);
+  --form-border-radius: .6em;
+  /* Checkbox */
+  --checkbox-size: 1rem;
+
+  /* Label */
+  --label-padding: rem(6) rem(18);
+  --label-color: #fff;
+
+  /* Message */
+  --message-border-radius: .6em;
+  --message-padding: rem(10) rem(14);
+
+  /* Message BOX */
+  --messageBox-wrapper-background-color: rgba(39, 39, 39, 0.48);
+  --messageBox-background-color: #fff;
+  --messageBox-border-radius: rem(8);
+  --messageBox-title-font-size: rem(24);
+
+  /* Table */
+  --table-background-color: #fff;
+  --table-line-height: 1.5em;
+  --table-td-padding: 14px;
+
+  /* Sidebar */
+  --sidebar-height: 96vh;
+  --sidebar-width: 240px;
+  --sidebar-content-padding: 40px 0;
+  --sidebar-content-padding--mobile: 20px 30px;
+  --sidebar-list-margin: rem(20) auto;
+  --sidebar-item-font-size: rem(18);
+  --sidebar-item-line-height: 2.1;
+
+  /* Navbar */
+  --navbar-background-color: #fff;
+  --navbar-height: 80px;
+  --navbar-item-color: #333;
+  --navbar-item-hover-color: #000;
+  --navbar-item-hover-background-color: transparent;
+  --navbar-fixed-z: 2;
+
+  /* Grid */
+  --grid-row-margin: rem(-10);
+  --grid-col-padding: rem(10);
+}

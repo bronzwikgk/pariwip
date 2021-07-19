@@ -1,0 +1,31 @@
+.ui-message {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: rem(20);
+    right: 10%;
+    padding: var(--message-padding);
+    background-color: #fff;
+    border: 1px solid var(--border-lighter);
+    border-radius: var(--message-border-radius);
+    z-index: 2000;
+    overflow: hidden;
+  }
+  .ui-message.ui-message--primary {
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  .ui-message.ui-message--success {
+    color: #fff;
+    background-color: var(--success-color);
+  }
+  .ui-message.ui-message--warning {
+    color: #fff;
+    background-color: var(--warning-color);
+  }
+  .ui-message.ui-message--danger {
+    color: #fff;
+    background-color: var(--danger-color);
+  }
+  

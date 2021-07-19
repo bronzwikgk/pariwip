@@ -1,0 +1,95 @@
+--desktop-width     ------>
+                    ------>     --sm-desktop-width
+--table-width       ------>     --tab-width
+--phone-width
+--sm-phone-width
+
+
+--primary-color
+--success-color
+--warning-color
+--danger-color
+--placeholder-color
+--neutral-primary       ------>     --
+--border-light          ------>     --default-border-color/--alt-border-color
+--border-base           ------>     --default-border-color/--alt-border-color
+--form-el-checkbox-color------>     --default-checkbox-color
+                        ------>     --alt-checkbox-color
+--main-font-color       ------>     --default-font-color
+--link-color            ------>     --default-link-color-unvisited
+--card-background-color ------>     --default-card-bg-color
+--neutral-placeholder-color------>  --placeholder-color
+--neutral-secondary-color------>    --
+--messageBox-wrapper-background-color --default-float-container-bg-color
+--messageBox-background-color       --default-float-container-bg-color
+--table-background-color ------>    --placeholder-color
+--navbar-background-color
+--navbar-item-color
+--navbar-background-color
+--navbar-item-hover-background-color
+--navbar-item-hover-color
+--border-lightex
+--border-lighter
+                        --purple-color
+                        --pink-color
+                        --red-color
+                        --green-color
+                        --blue-color
+                        --yellow-color
+                        --black-color
+                        --xtra-dark-color
+                        --darker-color
+                        --dark-color
+                        --regular-dark-color
+                        --regular-color
+                        --regular-light-color
+                        --light-color
+                        --lighter-color
+                        --xtra-light-color
+                        --white-color
+
+
+--main-line-height      ------>     --default-line-height
+--main-font-size        ------>     --default-font-size
+--main-font             ------>     --default-font
+--title-1-font-size
+--title-2-font-size
+--title-3-font-size
+--title-4-font-size
+--small-font-size       ------>     --down-font-size
+--smaller-font-size     ------>     
+--alert-padding
+--alert-margin-bottom
+--alert-border-radius
+--alert-opacity
+--card-border-radius
+--card-padding
+--main-transition       ------>     --default-transition
+--form-el-width         ------>     --form-width
+--form-el-height        ------>     --form-height 
+--form-el-padding       ------>     --form-padding
+--form-el-border-radius ------>     --form-border-radius
+--form-el-checkbox-size ------>     --checkbox-size
+--label-padding
+--messageBox-border-radius------>   
+--messageBox-title-font-size
+--message-padding
+--message-border-radius
+--navbar-height
+--navbar-fixed-z
+--navbar-height1
+--sidebar-width
+--sidebar-height
+--sidebar-content-padding
+--neutral-regular
+--sidebar-content-padding--mobile
+--sidebar-list-margin
+--sidebar-item-line-height
+--sidebar-item-font-size
+--table-line-height
+--table-td-padding
+--tag-padding
+--tag-border-radius
+                            ------>     --tag-opacity
+--grid-row-margin
+--grid-col-padding

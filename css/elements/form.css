@@ -1,0 +1,104 @@
+label,
+legend {
+  display: block;
+  font-size: rem(20);
+  margin-bottom: 0.5rem;
+}
+.label--inline {
+  display: inline-block;
+}
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+  appearance: none;
+  width: var(--form-el-width);
+  height: var(--form-el-height);
+  padding: var(--form-el-padding);
+  background-color: transparent;
+  border: 1px solid var(--border-base);
+  box-shadow: none;
+  box-sizing: inherit;
+  border-radius: var(--form-el-border-radius);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: transparent;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+/* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+/* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
+}
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: rem(20);
+}
+select {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='14' viewBox='0 0 29 14' width='29'><path fill='#d1d1d1' d='M9.37727 3.625l5.08154 6.93523L19.54036 3.625'/></svg>") center right no-repeat;
+  padding-right: rem(14);
+}
+textarea {
+  min-height: rem(70);
+}
+.ui-checkbox-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+.ui-checkbox-wrapper input,
+.ui-checkbox-wrapper label,
+.ui-checkbox-wrapper .label--inline {
+  margin-bottom: 0;
+}
+.ui-checkbox {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .ui-checkbox {
+    top: 2px;
+  }
+}
+.ui-checkbox:before {
+  width: var(--form-el-checkbox-size);
+  height: var(--form-el-checkbox-size);
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  border: 1px solid var(--border-base);
+  border-radius: 4px;
+  transition: var(--main-transition);
+}
+.ui-checkbox:checked:before {
+  transform: rotate(-45deg);
+  height: 0.5rem;
+  border: 2px solid var(--form-el-checkbox-color);
+  border-radius: 0;
+  border-top-style: none;
+  border-right-style: none;
+}
+.ui-checkbox:after {
+  width: var(--form-el-checkbox-size);
+  height: var(--form-el-checkbox-size);
+  position: absolute;
+  top: rem(-2);
+  left: 0;
+  content: "";
+  background: #fff;
+  cursor: pointer;
+}

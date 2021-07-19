@@ -1,0 +1,25 @@
+.ui-label {
+    padding: var(--label-padding);
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: var(--label-color);
+  }
+  .ui-label--primary {
+    background-color: var(--primary-color);
+  }
+  .ui-label--success {
+    background-color: var(--success-color);
+  }
+  .ui-label--danger {
+    background-color: var(--danger-color);
+  }
+  .ui-label--warning {
+    background-color: var(--warning-color);
+  }
+  .ui-label--light {
+    background-color: var(--light-color);
+  }
+  .ui-label--purple {
+    background-color: var(--purple-color);
+  }
+  

@@ -1,0 +1,17 @@
+.ui-card {
+    background-color: var(--card-background-color);
+    padding: var(--card-padding);
+    color: var(--neutral-primary);
+    border: 1px solid var(--border-light);
+    border-radius: var(--card-border-radius);
+  }
+  .ui-card.ui-card--shadow-always {
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  }
+  .ui-card.ui-card--shadow {
+    transition: var(--main-transition);
+  }
+  .ui-card.ui-card--shadow:hover {
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+  }
+  

@@ -1,0 +1,44 @@
+:root{
+    /* Font */
+    --default-font: var(--montserrat-font);
+    /* Size */
+    --default-font-size: var(--normal-font-size);
+    --up-font-size: var(--big-font-size);
+    --down-font-size: var(--small-font-size);
+
+    /* Colors */
+    --default-bg-color: var(--lighter-color);
+    --default-font-color: var(--darker-color);
+    --alt-font-color: var(--lighter-color);
+    --placeholder-color: var(--regular-light-color);
+    --default-border-color: var(--light-color);
+    --alt-border-color: var(--dark-color);
+    /* Link Color */
+    --default-link-color-unvisited: var(--darker-color);
+    --default-link-color-visited: var(--dark-color);
+    --default-link-color-active: var(--regular-color);
+    /* --default-link-color-hover: var(--); */
+
+    /* Transitions */
+    --default-transition: var(--transition-1);
+
+    /* Card */
+    --default-card-bg-color: var(--light-color);
+    --alt-card-bg-color: var(--dark-color);
+
+    /* Message, Alert, Popup Color */
+    --default-float-container-bg-color: var(--light-color);
+    --primary-float-container-bg-color: var(--primary-color);
+    --success-float-container-bg-color: var(--success-color);
+    --warning-float-container-bg-color: var(--warning-color);
+    --danger-float-container-bg-color: var(--danger-color);
+
+    /* Form Elements */
+    --default-checkbox-color: var(--primary-color);
+    
+    /* Table */
+    --default-table-bg-color: var(--lighter-color);
+
+    /* navbar */
+
+}

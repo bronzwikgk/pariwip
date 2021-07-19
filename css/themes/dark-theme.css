@@ -1,0 +1,6 @@
+:root{
+    --main-font-color: var(--lighter-color);
+    --alt-font-color: var(--darker-color);
+    --card-background-color: var(--dark-color);
+    
+}

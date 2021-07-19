@@ -1,0 +1,91 @@
+.navbar {
+    background-color: var(--navbar-background-color);
+    min-height: var(--navbar-height);
+    position: relative;
+    border-bottom: 1px solid #ccc;
+  }
+  .navbar.navbar--black {
+    background-color: #222;
+  }
+  .navbar.navbar--black .navbar-item,
+  .navbar.navbar--black .navbar-link {
+    color: #fff;
+  }
+  .navbar.navbar--black .button-burger .line {
+    background-color: #fff;
+  }
+  .navbar.navbar--transparent {
+    background-color: transparent;
+  }
+  .navbar.navbar-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: var(--navbar-fixed-z);
+  }
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--navbar-height);
+  }
+  .navbar-content .button-burger {
+    display: none;
+    z-index: 442;
+  }
+  @media screen and (max-width: 480px) {
+    .navbar-content .button-burger {
+      display: block;
+    }
+  }
+  .navbar-list {
+    display: flex;
+  }
+  @media screen and (max-width: 480px) {
+    .navbar-list__wrapper {
+      display: none;
+    }
+  }
+  .navbar-list__wrapper.active {
+    display: block;
+    position: fixed;
+    top: var(--navbar-height1);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background-color: #fff;
+  }
+  .navbar-list__wrapper.active .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-list__wrapper .navbar-item {
+    padding-right: 20px;
+  }
+  .navbar-item,
+  .navbar-link {
+    display: block;
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    color: var(--navbar-item-color);
+    cursor: pointer;
+  }
+  .navbar-item.navbar-item--white,
+  .navbar-link.navbar-item--white,
+  .navbar-item.navbar-link--white,
+  .navbar-link.navbar-link--white {
+    color: #fff;
+  }
+  .navbar-item:hover,
+  .navbar-link:hover,
+  .navbar-item.active,
+  .navbar-link.active {
+    background-color: var(--navbar-item-hover-background-color);
+    color: var(--navbar-item-hover-color);
+  }
+  .navbar-item:last-child,
+  .navbar-link:last-child {
+    padding-right: 0;
+  }
+  

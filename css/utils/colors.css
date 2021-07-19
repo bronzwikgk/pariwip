@@ -1,0 +1,59 @@
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-success {
+  background-color: var(--success-color);
+}
+
+.bg-danger {
+  background-color: var(--danger-color);
+}
+
+.bg-warning {
+  background-color: var(--warning-color);
+}
+
+.bg-purple {
+  background-color: var(--purple-color);
+}
+
+.bg-neutral-primary {
+  background-color: var(--neutral-primary-color);
+}
+
+.bg-neutral-regular {
+  background-color: var(--regular-color);
+}
+
+.bg-neutral-secondary {
+  background-color: var(--neutral-secondary-color);
+}
+
+.bg-placeholder {
+  background-color: var(--placeholder-color);
+}
+
+.bg-xtra-dark {
+  background-color: var(--xtra-dark-color);
+}
+
+.bg-darker {
+  background-color: var(--darker-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.bg-lighter {
+  background-color: var(--lighter-color);
+}
+
+.bg-xtra-light {
+  background-color: var(--xtra-light-color);
+}
