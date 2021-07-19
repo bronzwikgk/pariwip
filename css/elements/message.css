@@ -1,4 +1,4 @@
-.ui-message {
+.message {
     display: none;
     align-items: center;
     justify-content: center;
@@ -7,24 +7,24 @@
     right: 10%;
     padding: var(--message-padding);
     background-color: #fff;
-    border: 1px solid var(--border-lighter);
+    border: 1px solid var(--alt-border-color);
     border-radius: var(--message-border-radius);
     z-index: 2000;
     overflow: hidden;
   }
-  .ui-message.ui-message--primary {
+  .message.message--primary {
     color: #fff;
     background-color: var(--primary-color);
   }
-  .ui-message.ui-message--success {
+  .message.message--success {
     color: #fff;
     background-color: var(--success-color);
   }
-  .ui-message.ui-message--warning {
+  .message.message--warning {
     color: #fff;
     background-color: var(--warning-color);
   }
-  .ui-message.ui-message--danger {
+  .message.message--danger {
     color: #fff;
     background-color: var(--danger-color);
   }

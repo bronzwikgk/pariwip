@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/pari.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="navbar navbar-fixed">
+                <div class="container">
+                    <div class="navbar-content"><a class="header-logo" href="index.html">UImini</a>
+                        <div class="button-burger"><span class="line line-1"></span><span
+                                class="line line-2"></span><span class="line line-3"></span></div>
+                        <div class="navbar-list__wrapper">
+                            <ul class="navbar-list">
+                                <li class="navbar-item"><a class="navbar-link" href="get-started">Documetation</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="changelog">Changelog</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="get-started">Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sidebar-open-button">
+            <div class="button-burger"><span class="line line-1"></span><span class="line line-2"></span><span
+                    class="line line-3"></span></div>
+        </div>
+        <div class="sidebar">
+            <div class="container">
+                <div class="sidebar-content">
+                    <!-- Development-->
+                    <div class="ui-title-4">Development</div>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item"><a class="sidebar-link" href="get-started">Getting Started</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="color-customize">Color Customize</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="variables">Variables</a></li>
+                    </ul>
+                    <!-- Components-->
+                    <div class="ui-title-4">Components</div>
+                    <ul class="sidebar-list">
+                        <p class="ui-text-small" style="margin:16px 0 6px 0;">Basic:</p>
+                        <li class="sidebar-item"><a class="sidebar-link" href="grid">Grid</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="layout">Layout</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="color">Color</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="typography">Typography</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="buttons">Button</a></li>
+                        <p class="ui-text-small" style="margin:16px 0 6px 0;">Data:</p>
+                        <li class="sidebar-item"><a class="sidebar-link" href="table">Table</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="form">Form</a></li>
+                        <p class="ui-text-small" style="margin:16px 0 6px 0;">Notice:</p>
+                        <div class="sidebar-item--js__wrapper"><span class="sidebar-item--js">js</span>
+                            <li class="sidebar-item"><a class="sidebar-link" href="alert">Alert</a></li>
+                        </div>
+                        <div class="sidebar-item--js__wrapper"><span class="sidebar-item--js">js</span>
+                            <li class="sidebar-item"><a class="sidebar-link" href="message">Message</a></li>
+                        </div>
+                        <div class="sidebar-item--js__wrapper"><span class="sidebar-item--js">js</span>
+                            <li class="sidebar-item"><a class="sidebar-link" href="message-box">MessageBox</a></li>
+                        </div>
+                        <li class="sidebar-item"><a class="sidebar-link" href="labels">Label</a></li>
+                        <div class="sidebar-item--js__wrapper"><span class="sidebar-item--js">js</span>
+                            <li class="sidebar-item"><a class="sidebar-link" href="tag">Tag</a></li>
+                        </div>
+                        <p class="ui-text-small" style="margin:16px 0 6px 0;">Navigation:</p>
+                        <div class="sidebar-item--js__wrapper"><span class="sidebar-item--js">js</span>
+                            <li class="sidebar-item"><a class="sidebar-link" href="navigation">Nav</a></li>
+                        </div>
+                        <div class="sidebar-item--js__wrapper"><span class="sidebar-item--js">js</span>
+                            <li class="sidebar-item"><a class="sidebar-link" href="sidebar">Sidebar</a></li>
+                        </div>
+                        <p class="ui-text-small" style="margin:16px 0 6px 0;">Other:</p>
+                        <li class="sidebar-item"><a class="sidebar-link" href="cards">Card</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper content-wrapper--sidebar content-wrapper--fix-header">
+            <section class="alert-doc">
+                <div class="container">
+                    <h1 class="ui-title-1">Alert</h1><span>Displays important alert messages</span>
+                </div>
+            </section>
+            <section class="alert-doc__close-button">
+                <div class="container"><span class="ui-title-2">With close button:</span>
+                    <div class="example-empty">
+                        <div class="ui-alert ui-alert--primary"><span class="alert-title">Primary Text</span><span
+                                class="button-close"></span></div>
+                        <div class="ui-alert ui-alert--success"><span class="alert-title">Primary Text</span><span
+                                class="button-close"></span></div>
+                        <div class="ui-alert ui-alert--danger"><span class="alert-title">Primary Text</span><span
+                                class="button-close"></span></div>
+                        <div class="ui-alert ui-alert--warning"><span class="alert-title">Primary Text</span><span
+                                class="button-close"></span></div>
+                        <div class="ui-alert ui-alert--light"><span class="alert-title">Primary Text</span><span
+                                class="button-close"></span></div>
+                        <div class="ui-alert ui-alert--purple"><span class="alert-title">Primary Text</span><span
+                                class="button-close"></span></div>
+                    </div>
+                    <div class="content-docs_help"><span class="ui-title-2">Example:</span></div>
+                    <pre>    <code class="hljs javascript">
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--primary"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--success"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--danger"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--warning"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--light"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--purple"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+      </code>
+    </pre><span class="ui-title-2">Simple:</span>
+                    <div class="example-empty">
+                        <div class="ui-alert ui-alert--primary"><span class="alert-title">Primary Text</span></div>
+                        <div class="ui-alert ui-alert--success"><span class="alert-title">Primary Text</span></div>
+                        <div class="ui-alert ui-alert--danger"><span class="alert-title">Primary Text</span></div>
+                        <div class="ui-alert ui-alert--warning"><span class="alert-title">Primary Text</span></div>
+                        <div class="ui-alert ui-alert--light"><span class="alert-title">Primary Text</span></div>
+                        <div class="ui-alert ui-alert--purple"><span class="alert-title">Primary Text</span></div>
+                    </div>
+                    <div class="content-docs_help"><span class="ui-title-2">Example:</span></div>
+                    <pre>    <code class="hljs javascript">
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--primary"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--success"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--danger"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--warning"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--light"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ui-alert ui-alert--purple"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert-title"</span>&gt;</span>Primary Text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+      </code>
+    </pre>
+                </div>
+            </section>
+            <footer>
+                <!-- example-->
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -6,9 +6,9 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--tag-padding);
-    border: 1px solid var(--border-base);
+    border: 1px solid var(--default-border-color);
     border-radius: var(--tag-border-radius);
-    color: var(--neutral-regular);
+    color: var(--regular-color);
     font-size: 18px;
     z-index: 1;
   }

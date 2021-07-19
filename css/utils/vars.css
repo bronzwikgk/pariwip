@@ -89,10 +89,8 @@
   --message-padding: rem(10) rem(14);
 
   /* Message BOX */
-  --messageBox-wrapper-background-color: rgba(39, 39, 39, 0.48);
-  --messageBox-background-color: #fff;
-  --messageBox-border-radius: rem(8);
-  --messageBox-title-font-size: rem(24);
+  --message-box-border-radius: rem(8);
+  --message-box-title-font-size: rem(24);
 
   /* Table */
   --table-background-color: #fff;

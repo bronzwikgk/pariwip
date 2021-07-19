@@ -16,13 +16,14 @@
 --form-el-checkbox-color------>     --default-checkbox-color
                         ------>     --alt-checkbox-color
 --main-font-color       ------>     --default-font-color
---link-color            ------>     --default-link-color-unvisited
+--link-color            ------>     --default-link-color-{unvisited/active/visited}
 --card-background-color ------>     --default-card-bg-color
 --neutral-placeholder-color------>  --placeholder-color
 --neutral-secondary-color------>    --
+--label-color           ------>     --default-bg-color
 --messageBox-wrapper-background-color --default-float-container-bg-color
 --messageBox-background-color       --default-float-container-bg-color
---table-background-color ------>    --placeholder-color
+--table-background-color ------>    --default-table-bg-color
 --navbar-background-color
 --navbar-item-color
 --navbar-background-color
@@ -65,14 +66,14 @@
 --card-border-radius
 --card-padding
 --main-transition       ------>     --default-transition
---form-el-width         ------>     --form-width
---form-el-height        ------>     --form-height 
---form-el-padding       ------>     --form-padding
---form-el-border-radius ------>     --form-border-radius
+--form-el-width         ------>     --form-elem-width
+--form-el-height        ------>     --form-elem-height 
+--form-el-padding       ------>     --form-elem-padding
+--form-el-border-radius ------>     --form-elem-border-radius
 --form-el-checkbox-size ------>     --checkbox-size
 --label-padding
---messageBox-border-radius------>   
---messageBox-title-font-size
+--messageBox-border-radius------>   --message-box-border-radius
+--messageBox-title-font-size------> --message-box-title-font-size
 --message-padding
 --message-border-radius
 --navbar-height

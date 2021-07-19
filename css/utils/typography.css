@@ -4,7 +4,7 @@
 .ui-title-4 {
   display: block;
   font-weight: normal;
-  color: var(--main-font-color);
+  color: var(--default-font-color);
   margin-bottom: .4em;
 }
 
@@ -25,22 +25,22 @@
 }
 
 .ui-text-regular {
-  font-size: var(--main-font-size);
+  font-size: var(--default-font-size);
   color: var(--regular-color);
 }
 
 .ui-text-small {
   font-size: var(--small-font-size);
-  color: var(--neutral-secondary-color);
+  color: var(--regular-light-color);
 }
 
 .ui-text-smaller {
-  font-size: var(--smaller-font-size);
-  color: var(--neutral-placeholder-color);
+  font-size: var(--down-font-size);
+  color: var(--placeholder-color);
 }
 
 .ui-text-hide {
-  color: var(--neutral-placeholder-color);
+  color: var(--placeholder-color);
 }
 
 .ui-highlight {

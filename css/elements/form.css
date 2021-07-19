@@ -17,14 +17,14 @@ input[type='url'],
 textarea,
 select {
   appearance: none;
-  width: var(--form-el-width);
-  height: var(--form-el-height);
-  padding: var(--form-el-padding);
+  width: var(--form-elem-width);
+  height: var(--form-elem-height);
+  padding: var(--form-elem-padding);
   background-color: transparent;
-  border: 1px solid var(--border-base);
+  border: 1px solid var(--default-border-color);
   box-shadow: none;
   box-sizing: inherit;
-  border-radius: var(--form-el-border-radius);
+  border-radius: var(--form-elem-border-radius);
 }
 input:focus,
 select:focus,
@@ -52,16 +52,16 @@ select {
 textarea {
   min-height: rem(70);
 }
-.ui-checkbox-wrapper {
+.checkbox-wrapper {
   position: relative;
   cursor: pointer;
 }
-.ui-checkbox-wrapper input,
-.ui-checkbox-wrapper label,
-.ui-checkbox-wrapper .label--inline {
+.checkbox-wrapper input,
+.checkbox-wrapper label,
+.checkbox-wrapper .label--inline {
   margin-bottom: 0;
 }
-.ui-checkbox {
+.checkbox {
   width: 1rem;
   height: 1rem;
   position: relative;
@@ -69,32 +69,32 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-  .ui-checkbox {
+  .checkbox {
     top: 2px;
   }
 }
-.ui-checkbox:before {
-  width: var(--form-el-checkbox-size);
-  height: var(--form-el-checkbox-size);
+.checkbox:before {
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
   content: "";
   position: absolute;
   left: 0;
   z-index: 1;
-  border: 1px solid var(--border-base);
+  border: 1px solid var(--default-border-color);
   border-radius: 4px;
-  transition: var(--main-transition);
+  transition: var(--default-transition);
 }
-.ui-checkbox:checked:before {
+.checkbox:checked:before {
   transform: rotate(-45deg);
   height: 0.5rem;
-  border: 2px solid var(--form-el-checkbox-color);
+  border: 2px solid var(--default-checkbox-color);
   border-radius: 0;
   border-top-style: none;
   border-right-style: none;
 }
-.ui-checkbox:after {
-  width: var(--form-el-checkbox-size);
-  height: var(--form-el-checkbox-size);
+.checkbox:after {
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
   position: absolute;
   top: rem(-2);
   left: 0;

@@ -1,7 +1,7 @@
 html {
-    line-height: var(--main-line-height);
-    font-size: var(--main-font-size);
-    color: var(--main-font-color);
+    line-height: var(--default-line-height);
+    font-size: var(--default-font-size);
+    color: var(--default-font-color);
 }
 
 @media screen and (max-width: 1280px) {
@@ -23,16 +23,16 @@ html {
 }
 
 body {
-    font-family: var(--main-font);
+    font-family: var(--default-font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: var(--main-font-size);
+    font-size: var(--default-font-size);
     font-weight: normal;
 }
 
 a {
     text-decoration: none;
-    color: var(--link-color);
+    color: var(--default-link-color-unvisited);
 }
 
 section,
@@ -107,7 +107,7 @@ section,
 
 @media screen and (max-width: 980px) {
     .container {
-        max-width: var(--table-width);
+        max-width: var(--tab-width);
         padding: 0rem;
     }
 }
@@ -127,7 +127,7 @@ section,
 }
 
 .container.container--small {
-    max-width: var(--table-width);
+    max-width: var(--tab-width);
 }
 
 @media screen and (max-width: 980px) {

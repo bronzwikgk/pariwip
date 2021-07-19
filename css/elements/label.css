@@ -1,25 +1,28 @@
-.ui-label {
+.label {
     padding: var(--label-padding);
     white-space: nowrap;
     text-transform: uppercase;
-    color: var(--label-color);
+    color: var(--default-bg-color);
   }
-  .ui-label--primary {
+  .label--primary {
     background-color: var(--primary-color);
   }
-  .ui-label--success {
+  .label--success {
     background-color: var(--success-color);
   }
-  .ui-label--danger {
+  .label--danger {
     background-color: var(--danger-color);
   }
-  .ui-label--warning {
+  .label--warning {
     background-color: var(--warning-color);
   }
-  .ui-label--light {
+  .label--light {
     background-color: var(--light-color);
   }
-  .ui-label--purple {
+  .label--dark {
+    background-color: var(--dark-color);
+  }
+  .label--purple {
     background-color: var(--purple-color);
   }
   

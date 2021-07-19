@@ -1,4 +1,4 @@
-.ui-alert {
+.alert {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,42 +12,45 @@
   }
  
   @media screen and (max-width: 768px) {
-    .ui-alert {
+    .alert {
       font-size: 15.120000000000001px;
     }
   }
 
   @media screen and (max-width: 480px) {
-    .ui-alert {
+    .alert {
       font-size: 13.68px;
     }
   }
   
-  .ui-alert .button-close {
+  .alert .button-close {
     z-index: 2;
     width: rem(20);
     height: rem(20);
   }
-  .ui-alert .button-close:before,
-  .ui-alert .button-close:after {
+  .alert .button-close:before,
+  .alert .button-close:after {
     background-color: #fff;
   }
-  .ui-alert--primary {
+  .alert--primary {
     background-color: var(--primary-color);
   }
-  .ui-alert--success {
+  .alert--success {
     background-color: var(--success-color);
   }
-  .ui-alert--danger {
+  .alert--danger {
     background-color: var(--danger-color);
   }
-  .ui-alert--warning {
+  .alert--warning {
     background-color: var(--warning-color);
   }
-  .ui-alert--light {
+  .alert--light {
     background-color: var(--light-color);
   }
-  .ui-alert--purple {
+  .alert--dark {
+    background-color: var(--dark-color);
+  }
+  .alert--purple {
     background-color: var(--purple-color);
   }
   

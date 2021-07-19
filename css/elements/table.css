@@ -1,13 +1,13 @@
 .ui-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: var(--table-background-color);
+    background-color: var(--default-table-bg-color);
     line-height: var(--table-line-height);
-    transition: var(--mainTransition);
+    transition: var(--default-transition);
   }
   .ui-table td {
     padding: var(--table-td-padding);
-    border-bottom: 1px solid var(--border-lighter);
+    border-bottom: 1px solid var(--alt-border-color);
   }
   .ui-table td:first-child {
     padding-right: 20px;
@@ -17,12 +17,12 @@
     overflow: hidden;
     white-space: nowrap;
     user-select: none;
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--default-border-color);
   }
   .ui-table thead:first-child {
     padding-left: 20px;
   }
   .ui-table.ui-table--hover tbody tr:hover {
-    background-color: var(--border-lightex);
+    background-color: var(--alt-border-color);
   }
   
