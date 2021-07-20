@@ -1,6 +1,5 @@
 *a work in progress repo for shunyaTech internal team.
 
-# pariwip
 a one of a kind stylesheet for stylesheets.
 
 --
