@@ -1,0 +1,154 @@
+.container-block {
+    display: block;
+    position: relative;
+    width: calc(100%-5px);
+    height: auto;
+    margin: 5px;
+}
+
+.container-flex {
+    display: flex;
+    width: max-content;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* To be done later */
+/* .container-grid {} */
+
+.container-float {
+    display: block;
+    position: fixed;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-pop {
+    position: absolute;
+    z-index: 9;
+    border: 1px solid #d3d3d3;
+    cursor: move;
+}
+
+/* styling is to be decided */
+/* .container-list {} */
+
+.container-stack {
+    position: absolute;
+    background-color: aqua;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(190, 190, 190, 0.568);
+    margin: 10px;
+    cursor: move;
+    z-index: 1;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.container-resizable {
+    position: relative;
+    border: 5px solid rgba(119, 119, 119, 0.658);
+    margin: 10px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    padding: 10px;
+}
+
+.container-resizable>.resizer {
+    /* All resizers are positioned absolutely inside the element */
+    position: absolute;
+}
+
+/* Placed at the bottom side */
+.container-resizable>.resizer.resizer-b {
+    /* background-color: rgba(255, 75, 20, 0.356); */
+    bottom: -5px;
+    cursor: s-resize;
+    height: 5px;
+    left: 0;
+    width: 100%;
+}
+
+/* Placed at the right side */
+.container-resizable>.resizer.resizer-r {
+    /* background-color: rgba(255, 75, 20, 0.356); */
+    cursor: e-resize;
+    height: 100%;
+    right: -5px;
+    top: 0;
+    width: 5px;
+}
+
+/* Placed at the right side */
+.container-resizable>.resizer.resizer-br {
+    cursor: se-resize;
+    height: 5px;
+    width: 5px;
+    right: -5px;
+    bottom: -5px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+.container-collapsible {
+    position: relative;
+    padding: 0 18px 20px 18px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.container-collapsible.collapse-top {
+    max-height: 0px;
+    transition: max-height 0.2s ease-out;
+}
+
+.container-collapsible * {
+    position: relative;
+}
+
+.container-collapsible>.collapse-icon:first-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #eee;
+    box-sizing: border-box;
+    width: 100px;
+    color: #444;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    transition: 0.4s;
+}
+
+.collapse-icon.active {
+    background-color: #ccc;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.container-table {
+    display: table;
+    width: auto;
+    background-color: #eee;
+    border: 1px solid #666666;
+    border-spacing: 5px;
+    /* cellspacing:poor IE support for  this */
+}
+
+.container-table .table-row {
+    display: table-row;
+    width: auto;
+    clear: both;
+}
+
+.container-table .table-col {
+    float: left;
+    /* fix for  buggy browsers */
+    display: table-column;
+    width: 200px;
+    background-color: #ccc;
+}

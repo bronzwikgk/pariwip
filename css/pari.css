@@ -1,15 +1,20 @@
-/* utils */
-@import url('utils/colors.css');
-/* @import url('utils/mixin.css'); */
-@import url('utils/reset.css');
+/* Style Normalization */
+@import url('base/reset.css');
+
+/* Resources */
+@import url('base/fonts.css');
+@import url('base/animation.css');
 @import url('utils/vars.css');
 
-/* base */
-@import url('base/fonts.css');
+/* general styling */
 @import url('base/general.css');
-@import url('base/typography.css');
-@import url('base/animation.css');
+/* @import url('utils/mixin.css'); */
 
+@import url('utils/colors.css');
+@import url('utils/typography.css');
+
+/* Components */
+@import url('components/containers.css');
 /* grid */
 @import url('grid/columns.css');
 

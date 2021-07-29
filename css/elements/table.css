@@ -1,28 +1,28 @@
-.ui-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     background-color: var(--default-table-bg-color);
     line-height: var(--table-line-height);
     transition: var(--default-transition);
   }
-  .ui-table td {
+  .table td {
     padding: var(--table-td-padding);
     border-bottom: 1px solid var(--alt-border-color);
   }
-  .ui-table td:first-child {
+  .table td:first-child {
     padding-right: 20px;
   }
-  .ui-table thead th {
+  .table thead th {
     padding: 14px;
     overflow: hidden;
     white-space: nowrap;
     user-select: none;
     border-bottom: 1px solid var(--default-border-color);
   }
-  .ui-table thead:first-child {
+  .table thead:first-child {
     padding-left: 20px;
   }
-  .ui-table.ui-table--hover tbody tr:hover {
+  .table.table--hover tbody tr:hover {
     background-color: var(--alt-border-color);
   }
   
