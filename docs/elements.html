@@ -9,407 +9,651 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/pari.css">
     <link rel="stylesheet" href="../css/themes/light-theme.css">
+    <style>
+        .elem-container-title {
+            position: relative;
+            width: auto;
+            height: auto;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            margin-bottom: 0px;
+        }
+
+        .elem-container {
+            position: relative;
+            width: auto;
+            height: auto;
+            background-color: rgb(243, 243, 243);
+            padding: 10px;
+            margin: 40px 10px;
+            margin-top: 0px;
+            border-radius: 5px;
+            border: 2px solid rgb(179, 179, 179);
+        }
+
+        .elem-container::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: calc(100% + 20px);
+            left: -10px;
+            bottom: -25px;
+            border: 1px solid rgb(214, 214, 214);
+        }
+    </style>
 </head>
 
 <body>
 
     <html-elements>
-        <address>
-            <a href="mailto:jim@rock.com">jim@rock.com</a><br>
-            <a href="tel:+13115552368">(311) 555-2368</a>
-        </address>
 
-        <article class="forecast">
-            <h1>Weather forecast for Seattle</h1>
-            <article class="day-forecast">
-                <h2>03 March 2018</h2>
-                <p>Rain.</p>
-            </article>
-            <article class="day-forecast">
-                <h2>04 March 2018</h2>
-                <p>Periods of rain.</p>
-            </article>
-            <article class="day-forecast">
-                <h2>05 March 2018</h2>
-                <p>Heavy rain.</p>
-            </article>
-        </article>
 
-        <aside>
-            <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
-        </aside>
+        <!-- <span class="elem-container-title">&lt;Title&gt;</span>
+        <div class="elem-container">
+            This is Container
+        </div> -->
 
-        <footer>
-            <p>© 2018 Gandalf</p>
-        </footer>
-
-        <header class="page-header">
-            <h1>Cute Puppies Express!</h1>
-        </header>
-
-        <h1>Beetles</h1>
-        <h2>External morphology</h2>
-        <h3>Head</h3>
-        <h4>Mouthparts</h4>
-        <h5>Thorax</h5>
-        <h6>Prothorax</h6>
-
-        <main>
-            <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except
-                Australia.</p>
-
-            <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
-        </main>
-
-        <nav class="crumbs">
-            <ol>
-                <li class="crumb"><a href="#">Bikes</a></li>
-                <li class="crumb"><a href="#">BMX</a></li>
-                <li class="crumb">Jump Bike 3000</li>
-            </ol>
-        </nav>
-
-        <section>
-            <h2>Introduction</h2>
-            <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
-        </section>
-
-        <figure>
-            <blockquote cite="https://www.huxley.net/bnw/four.html">
-                <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re
-                    pierced.</p>
-            </blockquote>
-            <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
-        </figure>
-
-        <dl>
-            <dt>Beast of Bodmin</dt>
-            <dd>A large feline inhabiting Bodmin Moor.</dd>
-
-            <dt>Morgawr</dt>
-            <dd>A sea serpent.</dd>
-
-            <dt>Owlman</dt>
-            <dd>A giant owl-like creature.</dd>
-        </dl>
-
-        <div class="warning">
-            This is div
+        <span class="elem-container-title"> &lt;address&gt; </span>
+        <div class="elem-container">
+            <address>
+                <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                <a href="tel:+13115552368">(311) 555-2368</a>
+            </address>
         </div>
 
-        <hr>
+        <span class="elem-container-title"> &lt;article&gt;</span>
+        <div class="elem-container">
+            <article class="forecast">
+                <h1>Weather forecast for Seattle</h1>
+                <article class="day-forecast">
+                    <h2>03 March 2018</h2>
+                    <p>Rain.</p>
+                </article>
+                <article class="day-forecast">
+                    <h2>04 March 2018</h2>
+                    <p>Periods of rain.</p>
+                </article>
+                <article class="day-forecast">
+                    <h2>05 March 2018</h2>
+                    <p>Heavy rain.</p>
+                </article>
+            </article>
+        </div>
 
-        <img src="https://interactive-examples.mdn.mozilla.net/media/examples/leopard.jpg"
-            alt="An intimidating leopard.">
+        <span class="elem-container-title">&lt;aside&gt;</span>
+        <div class="elem-container">
+            <aside>
+                <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+            </aside>
+        </div>
 
-        <p>Beware of the leopard</p>
+        <span class="elem-container-title">&lt;footer&gt;</span>
+        <div class="elem-container">
+            <footer>
+                <p>© 2018 Gandalf</p>
+            </footer>
+        </div>
 
-        <hr>
+        <span class="elem-container-title">&lt;header&gt;</span>
+        <div class="elem-container">
+            <header class="page-header">
+                <h1>Cute Puppies Express!</h1>
+            </header>
+        </div>
 
-        <ul>
-            <li>Neil Armstrong</li>
-            <li>Alan Bean</li>
-            <li>Peter Conrad</li>
-            <li>Edgar Mitchell</li>
-            <li>Alan Shepard</li>
-        </ul>
+        <span class="elem-container-title">&lt;h1&gt; - &lt;h6&gt;</span>
+        <div class="elem-container">
+            H1: <h1>Beetles</h1>
+            H2: <h2>External morphology</h2>
+            H3: <h3>Head</h3>
+            H4: <h4>Mouthparts</h4>
+            H5: <h5>Thorax</h5>
+            H6: <h6>Prothorax</h6>
+        </div>
 
-        <ol>
-            <li>Neil Armstrong</li>
-            <li>Alan Bean</li>
-            <li>Peter Conrad</li>
-            <li>Edgar Mitchell</li>
-            <li>Alan Shepard</li>
-        </ol>
+        <span class="elem-container-title">&lt;main&gt;</span>
+        <div class="elem-container">
+            <main>
+                <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent
+                    except
+                    Australia.</p>
 
-        <!-- <p>( ͡° ͜ʖ ͡°)︻̷┻̿═━一-</p> -->
-        <pre>
-            ( ͡° ͜ʖ ͡°)︻̷┻̿═━一-                 皿≡≡≡≡≡≡≡皿            - ╾━╤デ╦︻(˙ ͜ʟ˙ )
+                <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
+            </main>
+        </div>
 
-                                        ヽ༼ ʘ̚ل͜ʘ̚༼◕_◕༽◉_◔ ༽ﾉ
-            ヽ༼ ʘ̚ل͜ʘ̚༼◕_◕༽◉_◔ ༽ﾉ                                  ヽ༼ ʘ̚ل͜ʘ̚༼◕_◕༽◉_◔ ༽ﾉ
-        </pre>
+        <span class="elem-container-title">&lt;nav&gt;</span>
+        <div class="elem-container">
+            <nav class="crumbs">
+                <ol>
+                    <li class="crumb"><a href="#">Bikes</a></li>
+                    <li class="crumb"><a href="#">BMX</a></li>
+                    <li class="crumb">Jump Bike 3000</li>
+                </ol>
+            </nav>
+        </div>
 
-        <a href="">Website</a>
+        <span class="elem-container-title">&lt;section&gt;</span>
+        <div class="elem-container">
+            <section>
+                <h2>Introduction</h2>
+                <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+            </section>
+        </div>
 
-        <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr
-                title="HyperText Markup Language">HTML</abbr>.</p>
+        <span class="elem-container-title">&lt;figure&gt; , &lt;figcaption&gt; , &lt;blockquote&gt; , &lt;cite&gt;</span>
+        <div class="elem-container">
+            <figure>
+                <blockquote cite="https://www.huxley.net/bnw/four.html">
+                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and
+                        you’re
+                        pierced.</p>
+                </blockquote>
+                <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+            </figure>
+        </div>
 
-        <b>chemistry</b>
+        <span class="elem-container-title">&lt;dl&gt; , &lt;dt&gt; , &lt;dd&gt;</span>
+        <div class="elem-container">
+            <dl>
+                <dt>Beast of Bodmin</dt>
+                <dd>A large feline inhabiting Bodmin Moor.</dd>
 
-        <bdi class="name">Evil Steven</bdi>: 1st place
-        <bdi class="name">الرجل القوي إيان</bdi>: 2nd place
+                <dt>Morgawr</dt>
+                <dd>A sea serpent.</dd>
 
-        <p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+                <dt>Owlman</dt>
+                <dd>A giant owl-like creature.</dd>
+            </dl>
+        </div>
 
-        <br> <br>
+        <span class="elem-container-title">&lt;div&gt;</span>
+        <div class="elem-container">
+            <div> This is div </div>
+        </div>
 
-        <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> <br>
+        <span class="elem-container-title">&lt;hr&gt;</span>
+        <div class="elem-container">
+            <hr>
+        </div>
 
-        <code>
-            if(!Mona.pushes(child)){
-            pullFromVaccumCleaner();
-            }
-        </code>
+        <span class="elem-container-title">&lt;img&gt;</span>
+        <div class="elem-container">
+            <img src="https://interactive-examples.mdn.mozilla.net/media/examples/leopard.jpg"
+                alt="An intimidating leopard." height="150">
+        </div>
 
-        <data value="398">Mini Ketchup</data>
+        <span class="elem-container-title">&lt;p&gt;</span>
+        <div class="elem-container">
+            <p>Beware of the leopard</p>
+        </div>
 
-        <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.
-        </p>
+        <span class="elem-container-title">&lt;ul&gt; , &lt;li&gt;</span>
+        <div class="elem-container">
+            <ul>
+                <li>Neil Armstrong</li>
+                <li>Alan Bean</li>
+                <li>Peter Conrad</li>
+                <li>Edgar Mitchell</li>
+                <li>Alan Shepard</li>
+            </ul>
+        </div>
 
-        <p>We <em>had</em> to do something about it.</p>
+        <span class="elem-container-title">&lt;ol&gt;</span>
+        <div class="elem-container">
+            <ol>
+                <li>Neil Armstrong</li>
+                <li>Alan Bean</li>
+                <li>Peter Conrad</li>
+                <li>Edgar Mitchell</li>
+                <li>Alan Shepard</li>
+            </ol>
+        </div>
 
-        <p><i class="latin">Musa</i> is one of two or three genera in the family <i class="latin">Musaceae</i>; it
-            includes bananas and plantains.</p>
+        <span class="elem-container-title">&lt;pre&gt;</span>
+        <div class="elem-container">
+            <pre>
+                ( ͡° ͜ʖ ͡°)︻̷┻̿═━一-                 皿≡≡≡≡≡≡≡皿            - ╾━╤デ╦︻(˙ ͜ʟ˙ )
+    
+                                            ヽ༼ ʘ̚ل͜ʘ̚༼◕_◕༽◉_◔ ༽ﾉ
+            </pre>
+        </div>
 
-        <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open developer tools.</p>
+        <span class="elem-container-title">&lt;a&gt;</span>
+        <div class="elem-container">
+            <a href="">Website</a>
+        </div>
 
-        <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+        <span class="elem-container-title">&lt;abbr&gt;</span>
+        <div class="elem-container">
+            <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr
+                    title="HyperText Markup Language">HTML</abbr>.</p>
+        </div>
 
-        <p>When Dave asks HAL to open the pod bay door, HAL answers: <q
-                cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do
-                that.</q></p>
+        <span class="elem-container-title">&lt;b&gt;</span>
+        <div class="elem-container">
+            <b>chemistry</b>
+        </div>
 
-        <ruby>
-            漢 <rp>(</rp>
-            <rt>kan</rt>
-            <rp>)</rp>
-            字 <rp>(</rp>
-            <rt>ji</rt>
-            <rp>)</rp>
-        </ruby>
+        <span class="elem-container-title">&lt;bdi&gt;</span>
+        <div class="elem-container">
+            <bdi class="name">Evil Steven</bdi>: 1st place <br>
+            <bdi class="name">الرجل القوي إيان</bdi>: 2nd place
+        </div>
 
-        <p><s>There will be a few tickets available at the box office tonight.</s></p>
-        <p>SOLD OUT!</p>
+        <span class="elem-container-title">&lt;bdo&gt;</span>
+        <div class="elem-container">
+            <p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+        </div>
 
-        <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+        <span class="elem-container-title">&lt;cite&gt;</span>
+        <div class="elem-container">
+            <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite>
+        </div>
 
-        <p><small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small>
-        </p>
+        <span class="elem-container-title">&lt;code&gt;</span>
+        <div class="elem-container">
+            <code>
+                if(!Mona.pushes(child)){
+                sayPushMonaPush = true;
+                pullFromVaccumCleaner();
+                }
+            </code>
+        </div>
 
-        <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span
-                class="ingredient">garlic</span> to a blender and blend into a paste.</p>
+        <span class="elem-container-title">&lt;data&gt;</span>
+        <div class="elem-container">
+            <data value="398">Mini Ketchup</data>
+        </div>
 
-        <p>... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much
-            he begs: <strong>never feed him after midnight</strong>.</p>
+        <span class="elem-container-title">&lt;dfn&gt;</span>
+        <div class="elem-container">
+            <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or
+                documents.
+            </p>
+        </div>
 
-        <p>Almost every developer's favorite molecule is
-            C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
+        <span class="elem-container-title">&lt;em&gt;</span>
+        <div class="elem-container">
+            <p>We <em>had</em> to do something about it.</p>
+        </div>
 
-        <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
-        <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+        <span class="elem-container-title">&lt;i&gt;</span>
+        <div class="elem-container">
+            <p><i class="latin">Musa</i> is one of two or three genera in the family <i class="latin">Musaceae</i>; it
+                includes bananas and plantains.</p>
+        </div>
 
-        <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's
-            Hyde Park.</p>
+        <span class="elem-container-title">&lt;kbd&gt;</span>
+        <div class="elem-container">
+            <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open developer tools.</p>
+        </div>
 
-        <p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+        <span class="elem-container-title">&lt;mark&gt;</span>
+        <div class="elem-container">
+            <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+        </div>
 
-        <p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
-            <var>w</var> the width and <var>h</var> the height of the box.</p>
+        <span class="elem-container-title">&lt;q&gt;</span>
+        <div class="elem-container">
+            <p>When Dave asks HAL to open the pod bay door, HAL answers: <q
+                    cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do
+                    that.</q></p>
+        </div>
 
-        <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
-        <p>Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
-            <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+        <span class="elem-container-title">&lt;ruby&gt; , &lt;rp&gt; , &lt;rt&gt;</span>
+        <div class="elem-container">
+            <ruby>
+                漢 <rp>(</rp>
+                <rt>kan</rt>
+                <rp>)</rp>
+                字 <rp>(</rp>
+                <rt>ji</rt>
+                <rp>)</rp>
+            </ruby>
+        </div>
 
-            <map name="infographic">
-                <area shape="rect" coords="184,6,253,27" href="https://mozilla.org" target="_blank" alt="Mozilla" />
-                <area shape="circle" coords="130,136,60" href="https://developer.mozilla.org/" target="_blank"
-                    alt="MDN" />
-                <area shape="poly" coords="130,6,253,96,223,106,130,39"
-                    href="https://developer.mozilla.org/docs/Web/Guide/Graphics" target="_blank" alt="Graphics" />
-                <area shape="poly" coords="253,96,207,241,189,217,223,103"
-                    href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" alt="HTML" />
-                <area shape="poly" coords="207,241,54,241,72,217,189,217"
-                    href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" alt="JavaScript" />
-                <area shape="poly" coords="54,241,6,97,36,107,72,217" href="https://developer.mozilla.org/docs/Web/API"
-                    target="_blank" alt="Web APIs" />
-                <area shape="poly" coords="6,97,130,6,130,39,36,107" href="https://developer.mozilla.org/docs/Web/CSS"
-                    target="_blank" alt="CSS" />
-            </map>
-            <img usemap="#infographic" src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info.png"
-                alt="MDN infographic" />
+        <span class="elem-container-title">&lt;s&gt;</span>
+        <div class="elem-container">
+            <s>There will be a few tickets available at the box office tonight.</s>
+            <p>SOLD OUT!</p>
+        </div>
 
-            <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-            </audio>
+        <span class="elem-container-title">&lt;samp&gt;</span>
+        <div class="elem-container">
+            <samp>Keyboard not found <br>Press F1 to continue</samp>
+        </div>
 
-            <video controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4">
-                <track default kind="captions" srclang="en"
-                    src="https://interactive-examples.mdn.mozilla.net/media/examples/friday.vtt" />
-                Sorry, your browser doesn't support embedded videos.
-            </video>
+        <span class="elem-container-title">&lt;small&gt;</span>
+        <div class="elem-container">
+            <small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small>
+        </div>
 
-            <embed type="video/webm" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-                width="250" height="200">
+        <span class="elem-container-title">&lt;span&gt;</span>
+        <div class="elem-container">
+            <span>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span
+                    class="ingredient">garlic</span> to a blender and blend into a paste.</span>
+        </div>
 
-            <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-            </iframe>
+        <span class="elem-container-title">&lt;strong&gt;</span>
+        <div class="elem-container">
+            ... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much
+            he begs:
+            <strong>never feed him after midnight</strong>
+        </div>
 
-            <object type="application/pdf" data="https://interactive-examples.mdn.mozilla.net/media/examples/In-CC0.pdf"
-                width="250" height="200">
-                <param name="" value="">
-            </object>
+        <span class="elem-container-title">&lt;sub&gt;</span>
+        <div class="elem-container">
+            Almost every developer's favorite molecule is
+            C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."
+        </div>
 
-            <picture>
-                <source srcset="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg"
-                    media="(min-width: 800px)">
-                <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
-            </picture>
+        <span class="elem-container-title">&lt;sup&gt;</span>
+        <div class="elem-container">
+            <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
+            a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+        </div>
 
-            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
-                <circle cx="50" cy="50" r="40" />
-                <circle cx="150" cy="50" r="4" />
+        <span class="elem-container-title">&lt;time&gt;</span>
+        <div class="elem-container">
+            The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.
+        </div>
 
-                <svg viewBox="0 0 10 10" x="200" width="100">
-                    <circle cx="5" cy="5" r="4" />
+        <span class="elem-container-title">&lt;u&gt;</span>
+        <div class="elem-container">
+            You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.
+        </div>
+
+        <span class="elem-container-title">&lt;var&gt;</span>
+        <div class="elem-container">
+            The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
+            <var>w</var> the width and <var>h</var> the height of the box.
+        </div>
+
+        <span class="elem-container-title">&lt;wbr&gt;</span>
+        <div class="elem-container">
+            Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz
+            Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz
+        </div>
+
+            <span class="elem-container-title">&lt;map&gt;</span>
+            <div class="elem-container">
+                <map name="infographic">
+                    <area shape="rect" coords="184,6,253,27" href="https://mozilla.org" target="_blank" alt="Mozilla" />
+                    <area shape="circle" coords="130,136,60" href="https://developer.mozilla.org/" target="_blank"
+                        alt="MDN" />
+                    <area shape="poly" coords="130,6,253,96,223,106,130,39"
+                        href="https://developer.mozilla.org/docs/Web/Guide/Graphics" target="_blank" alt="Graphics" />
+                    <area shape="poly" coords="253,96,207,241,189,217,223,103"
+                        href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" alt="HTML" />
+                    <area shape="poly" coords="207,241,54,241,72,217,189,217"
+                        href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" alt="JavaScript" />
+                    <area shape="poly" coords="54,241,6,97,36,107,72,217"
+                        href="https://developer.mozilla.org/docs/Web/API" target="_blank" alt="Web APIs" />
+                    <area shape="poly" coords="6,97,130,6,130,39,36,107"
+                        href="https://developer.mozilla.org/docs/Web/CSS" target="_blank" alt="CSS" />
+                </map>
+                <img usemap="#infographic"
+                    src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info.png"
+                    alt="MDN infographic" />
+            </div>
+
+
+            <span class="elem-container-title">&lt;audio&gt;</span>
+            <div class="elem-container">
+                <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </div>
+
+            <span class="elem-container-title">&lt;video&gt; , &lt;video&gt;</span>
+            <div class="elem-container">
+                <video controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4">
+                    <track default kind="captions" srclang="en"
+                        src="https://interactive-examples.mdn.mozilla.net/media/examples/friday.vtt" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+
+            <span class="elem-container-title">&lt;embed&gt;</span>
+            <div class="elem-container">
+                <embed type="video/webm" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    width="250" height="200">
+            </div>
+
+            <span class="elem-container-title">&lt;iframe&gt;</span>
+            <div class="elem-container">
+                <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+                </iframe>
+            </div>
+
+            <span class="elem-container-title">&lt;object&gt; , &lt;param&gt;</span>
+            <div class="elem-container">
+                <object type="application/pdf"
+                    data="https://interactive-examples.mdn.mozilla.net/media/examples/In-CC0.pdf" width="250"
+                    height="200">
+                    <param name="" value="">
+                </object>
+            </div>
+
+            <span class="elem-container-title">&lt;picture&gt; , &lt;source&gt;</span>
+            <div class="elem-container">
+                <picture>
+                    <source srcset="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg"
+                        media="(min-width: 800px)">
+                    <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+                </picture>
+            </div>
+
+            <span class="elem-container-title">&lt;svg&gt;</span>
+            <div class="elem-container">
+                <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+                    <circle cx="50" cy="50" r="40" />
+                    <circle cx="150" cy="50" r="4" />
+
+                    <svg viewBox="0 0 10 10" x="200" width="100">
+                        <circle cx="5" cy="5" r="4" />
+                    </svg>
                 </svg>
-            </svg>
+            </div>
 
-            <math>
-                <mrow>
+            <span class="elem-container-title">&lt;math&gt;</span>
+            <div class="elem-container">
+                <math>
                     <mrow>
+                        <mrow>
+                            <msup>
+                                <mi>a</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>b</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </mrow>
+                        <mo>=</mo>
                         <msup>
-                            <mi>a</mi>
-                            <mn>2</mn>
-                        </msup>
-                        <mo>+</mo>
-                        <msup>
-                            <mi>b</mi>
+                            <mi>c</mi>
                             <mn>2</mn>
                         </msup>
                     </mrow>
-                    <mo>=</mo>
-                    <msup>
-                        <mi>c</mi>
-                        <mn>2</mn>
-                    </msup>
-                </mrow>
-            </math>
+                </math>
+            </div>
 
-            <canvas width="300" height="300">
-                An alternative text describing what your canvas displays.
-            </canvas>
+            <span class="elem-container-title">&lt;canvas&gt;</span>
+            <div class="elem-container">
+                <canvas width="300" height="300">
+                    An alternative text describing what your canvas displays.
+                </canvas>
+            </div>
 
-            <noscript>
-                <!-- anchor linking to external file -->
-                <a href="https://www.mozilla.com/">External Link</a>
-            </noscript>
-            <p>Rocks!</p>
+            <span class="elem-container-title">&lt;noscript&gt;</span>
+            <div class="elem-container">
+                <noscript>
+                    <!-- anchor linking to external file -->
+                    <a href="https://www.mozilla.com/">External Link</a>
+                </noscript>
+            </div>
 
-            <blockquote>
-                There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running
-                    it</ins> makes it so.
-            </blockquote>
+            <span class="elem-container-title">&lt;p&gt;</span>
+            <div class="elem-container">
+                <p>Rocks!</p>
+            </div>
 
-            <table>
-                <caption>He-Man and Skeletor facts</caption>
-                <thead>
+            <span class="elem-container-title">&lt;blockquote&gt; , &lt;del&gt; , &lt;ins&gt;</span>
+            <div class="elem-container">
+                <blockquote>
+                    There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del>
+                    <ins>running it</ins> makes it so.
+                </blockquote>
+            </div>
+
+            <span class="elem-container-title">&lt;table&gt; , &lt;caption&gt; , &lt;thead&gt; , &lt;tbody&gt; , &lt;tr&gt; , &lt;th&gt;</span>
+            <div class="elem-container">
+                <table>
+                    <caption>He-Man and Skeletor facts</caption>
+                    <thead>
+                        <tr>
+                            <td> </td>
+                            <th scope="col" class="heman">He-Man</th>
+                            <th scope="col" class="skeletor">Skeletor</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Role</th>
+                            <td>Hero</td>
+                            <td>Villain</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Weapon</th>
+                            <td>Power Sword</td>
+                            <td>Havoc Staff</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dark secret</th>
+                            <td>Expert florist</td>
+                            <td>Cries at romcoms</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <span class="elem-container-title">&lt;button&gt;</span>
+            <div class="elem-container">
+                <button class="favorite styled" type="button">
+                    Add to favorites
+                </button>
+            </div>
+
+            <span class="elem-container-title">&lt;label&gt; , &lt;input&gt; , &lt;datalist&gt;</span>
+            <div class="elem-container">
+                <label for="ice-cream-choice">Choose a flavor:</label>
+                <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                <datalist id="ice-cream-flavors">
+                    <option value="Chocolate">
+                    <option value="Coconut">
+                    <option value="Mint">
+                    <option value="Strawberry">
+                    <option value="Vanilla">
+                </datalist>
+            </div>
+
+            <span class="elem-container-title">&lt;form&gt; , &lt;fieldset&gt; , &lt;legend&gt; , &lt;input&gt; , &lt;label&gt;</span>
+            <div class="elem-container">
+                <form>
+                    <fieldset>
+                        <legend>Choose your favorite monster</legend>
+
+                        <input type="radio" id="kraken" name="monster">
+                        <label for="kraken">Kraken</label><br />
+
+                        <input type="radio" id="sasquatch" name="monster">
+                        <label for="sasquatch">Sasquatch</label><br />
+
+                        <input type="radio" id="mothman" name="monster">
+                        <label for="mothman">Mothman</label>
+                    </fieldset>
+                </form>
+            </div>
+
+            <span class="elem-container-title">&lt;select&gt; , &lt;optgroup&gt; , &lt;option&gt;</span>
+            <div class="elem-container">
+                <select id="dino-select">
+                    <optgroup label="Theropods">
+                        <option>Tyrannosaurus</option>
+                        <option>Velociraptor</option>
+                        <option>Deinonychus</option>
+                    </optgroup>
+                    <optgroup label="Sauropods">
+                        <option>Diplodocus</option>
+                        <option>Saltasaurus</option>
+                        <option>Apatosaurus</option>
+                    </optgroup>
+                </select>
+            </div>
+
+
+            <span class="elem-container-title">&lt;progress&gt;</span>
+            <div class="elem-container">
+                <progress id="file" max="100" value="70"> 70% </progress>
+            </div>
+
+            <span class="elem-container-title">&lt;textarea&gt;</span>
+            <div class="elem-container">
+                <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...
+                </textarea>
+            </div>
+
+            <span class="elem-container-title">&lt;details&gt; , &lt;summary&gt;</span>
+            <div class="elem-container">
+                <details>
+                    <summary>Details</summary>
+                    Something small enough to escape casual notice.
+                </details>
+            </div>
+
+            <span class="elem-container-title">&lt;dialog&gt;</span>
+            <div class="elem-container">
+                <dialog open>
+                    <p>Greetings, one and all!</p>
+                </dialog>
+            </div>
+
+            <span class="elem-container-title">&lt;menu&gt;</span>
+            <div class="elem-container">
+                <menu>
+                    <li>Cut</li>
+                    <li>Copy</li>
+                    <li>Paste</li>
+                </menu>
+            </div>
+
+            <span class="elem-container-title">&lt;slot&gt;</span>
+            <div class="elem-container">
+                <div class="attributes">
+                    <h4>Attributes</h4>
+                    <slot name="attributes">
+                        <p>None</p>
+                    </slot>
+                </div>
+            </div>
+
+            <span class="elem-container-title">&lt;template&gt;</span>
+            <div class="elem-container">
+                <template id="productrow">
                     <tr>
-                        <td> </td>
-                        <th scope="col" class="heman">He-Man</th>
-                        <th scope="col" class="skeletor">Skeletor</th>
+                        <td class="record"> record_demo</td>
+                        <td> record</td>
                     </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th scope="row">Role</th>
-                        <td>Hero</td>
-                        <td>Villain</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Weapon</th>
-                        <td>Power Sword</td>
-                        <td>Havoc Staff</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Dark secret</th>
-                        <td>Expert florist</td>
-                        <td>Cries at romcoms</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <button class="favorite styled" type="button">
-                Add to favorites
-            </button>
-
-            <label for="ice-cream-choice">Choose a flavor:</label>
-            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-
-            <datalist id="ice-cream-flavors">
-                <option value="Chocolate">
-                <option value="Coconut">
-                <option value="Mint">
-                <option value="Strawberry">
-                <option value="Vanilla">
-            </datalist>
-
-            <form>
-                <fieldset>
-                    <legend>Choose your favorite monster</legend>
-
-                    <input type="radio" id="kraken" name="monster">
-                    <label for="kraken">Kraken</label><br />
-
-                    <input type="radio" id="sasquatch" name="monster">
-                    <label for="sasquatch">Sasquatch</label><br />
-
-                    <input type="radio" id="mothman" name="monster">
-                    <label for="mothman">Mothman</label>
-                </fieldset>
-            </form>
-
-            <select id="dino-select">
-                <optgroup label="Theropods">
-                    <option>Tyrannosaurus</option>
-                    <option>Velociraptor</option>
-                    <option>Deinonychus</option>
-                </optgroup>
-                <optgroup label="Sauropods">
-                    <option>Diplodocus</option>
-                    <option>Saltasaurus</option>
-                    <option>Apatosaurus</option>
-                </optgroup>
-            </select>
-
-            <progress id="file" max="100" value="70"> 70% </progress>
-
-            <textarea id="story" name="story"
-          rows="5" cols="33">
-It was a dark and stormy night...
-</textarea>
-
-<details>
-    <summary>Details</summary>
-    Something small enough to escape casual notice.
-</details>
-
-<dialog open>
-    <p>Greetings, one and all!</p>
-  </dialog>
-
-  <menu>
-    <li><button>Copy</button></li>
-    <li><button>Cut</button></li>
-    <li><button>Paste</button></li>
-  </menu>
-
-  <div class="attributes">
-    <h4>Attributes</h4>
-    <slot name="attributes"><p>None</p></slot>
-  </div>
-
-  <template id="productrow">
-    <tr>
-      <td class="record"> record_demo</td>
-      <td> record</td>
-    </tr>
-  </template>
-
-
+                </template>
+            </div>
 
     </html-elements>
 
