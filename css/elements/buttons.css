@@ -49,13 +49,15 @@ button.button--plain:hover {
 /* ROUND */
 .button.button--round,
 button.button--round {
-	border-radius: button--round-border-radius;
+	border-radius: var(--button--round-border-radius);
 	padding: .48em 1.2em;
 }
 
 /* DISABLE */
-.button.button--disable .button[disable],
-button.button--disable button[disable] {
+.button.button--disable,
+button.button--disable,
+.button[disable],
+button[disable] {
 	opacity: .6;
 	/* Reset */
 	cursor: not-allowed;
@@ -67,103 +69,155 @@ button.button--disable button[disable] {
 /* Default */
 .button-default {
 	color: linkColor;
-	border: 1px solid border-base;
-	background-color: default-color;
+	border: 1px solid var(--default-border-color);
+	background-color: var(--default-button-bg-color);
 }
 
 .button-default.button--plain {
-	color: linkColor
+	color: var(--default-link-color-unvisited);
 }
 
 .button-default:hover {
-	background-color: linkColor
+	background-color: var(--default-link-color-unvisited);
 }
 
 /* Primary */
 .button-primary {
-	background-color: primary-color;
+	background-color: var(--primary-color);
 }
 
-.button--plain {
-	color: primary-color;
-	border: 1px solid primary-color;
+.button-primary.button--plain {
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
 }
 
-&:hover {
-	background-color: primary-color;
+.button-primary.button--plain:hover {
+	background-color: var(--primary-color);
 }
 
 /* Success */
 .button-success {
-	background-color: success-color;
+	background-color: var(--success-color);
 }
 
-&.button--plain {
-	color: success-color;
-	border: 1px solid success-color;
+.button-success.button--plain {
+	color: var(--success-color);
+	border: 1px solid var(--success-color);
 }
 
-&:hover {
-	background-color: success-color;
+.button-success.button--plain:hover {
+	background-color: var(--success-color);
 }
 
 /* Danger */
 .button-danger {
-	background-color: danger-color
+	background-color: var(--danger-color);
 }
 
-&.button--plain {
-	color: danger-color;
-	border: 1px solid danger-color;
+.button-danger.button--plain {
+	color: var(--danger-color);
+	border: 1px solid var(--danger-color);
 }
 
-&:hover {
-	background-color: danger-color;
+.button-danger.button--plain:hover {
+	background-color: var(--danger-color);
 }
 
 /* Warning */
 .button-warning {
-	background-color: warning-color;
+	background-color: var(--warning-color);
 }
 
-&.button--plain {
-	color: warning-color;
-	border: 1px solid warning-color;
+.button-warning.button--plain {
+	color: var(--warning-color);
+	border: 1px solid var(--warning-color);
 }
 
-&:hover {
-	background-color: warning-color;
+.button-warning.button--plain:hover {
+	background-color: var(--warning-color);
 }
 
 /* Light */
 .button-light {
-	background-color: light-color;
+	background-color: var(--light-color);
 }
 
-&.button--plain {
-	color: light-color;
-	border: 1px solid light-color;
+.button-light.button--plain {
+	color: var(--light-color);
+	border: 1px solid var(--light-color);
 }
 
-&:hover {
-	background-color: light-color;
+.button-light.button--plain:hover {
+	background-color: var(--light-color);
+}
+
+
+
+.button-copy {
+	position: absolute;
+	right: 0px;
+	margin: 0px 10px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: large;
+	cursor: pointer;
+	background-color: rgb(247, 245, 245);
+}
+
+.button-copy:hover {
+	background-color: rgb(226, 226, 226);
+}
+
+.button-copy:active {
+	background-color: rgb(199, 199, 199);
 }
 
 /* Close */
-.button-close display: inline-block position: relative width: 30px height @width overflow: hidden cursor: pointer opacity: .7 transition: mainTransition &:hover opacity: 1 &:before,
-&:after content: ''
-position: absolute height: 1px width: 100% top: 50% left: 0 margin-top: -1px background: #000 &:before transform: rotate(45deg) &:after transform: rotate(-45deg)
+.button-close {
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	cursor: pointer;
+	opacity: .7;
+	transition: var(--default-transition);
+}
+
+.button-close:hover {
+	opacity: 1;
+}
+
+.button-close::before,
+.button-close::after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	margin-top: -1px;
+	background: #000;
+}
+
+.button-close::before {
+	transform: rotate(45deg);
+}
+
+.button-close::after {
+	transform: rotate(-45deg);
+}
+
 /* Burget */
-.button-burger position: relative width: 34px height: 16px transform: rotate(0deg) transition: .5s ease-in-out cursor: pointer;
+/* .button-burger position: relative width: 34px height: 16px transform: rotate(0deg) transition: .5s ease-in-out cursor: pointer;
 &:hover,
 &:focus .line-1 transform: translateY(-1px);
 .line-3 transform: translateY(1px);
 &.active .line-1 transform: translateY(8.33px) translateX(0) rotate(45deg);
 .line-2 opacity: 0;
-.line-3 transform: translateY(-8.33px) translateX(0) rotate(-45deg);
+.line-3 transform: translateY(-8.33px) translateX(0) rotate(-45deg); */
 
 /* Burger Line */
-.line display: block position: absolute height: 2px width: 100% background-color: #333 border-radius: 4px;
+/* .line display: block position: absolute height: 2px width: 100% background-color: #333 border-radius: 4px;
 opacity 1 left: 0 transform: rotate(0deg) transition: mainTransition &.line--white background-color: #fff // Center
-.line-1 top: 0% .line-2 top: 50% .line-3 top: 100% @media screen and (max-width tableWidth) font-size @font-size - 16% @media screen and (max-width phoneWidth) font-size @font-size - 24% @media screen and (max-width tableWidth) font-size @font-size - 26% @media screen and (max-width phoneWidth) font-size @font-size - 34% //* 
-@media screen and (max-width tableWidth) font-size @font-size - 28% @media screen and (max-width phoneWidth) font-size @font-size - 36%
+.line-1 top: 0% .line-2 top: 50% .line-3 top: 100% @media screen and (max-width tableWidth) font-size @font-size - 16% @media screen and (max-width phoneWidth) font-size @font-size - 24% @media screen and (max-width tableWidth) font-size @font-size - 26% @media screen and (max-width phoneWidth) font-size @font-size - 34% /  @media screen and (max-width tableWidth) font-size @font-size - 28% @media screen and (max-width phoneWidth) font-size @font-size - 36%*/

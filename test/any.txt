@@ -94,3 +94,10 @@
                             ------>     --tag-opacity
 --grid-row-margin
 --grid-col-padding
+
+component is container with theme and data
+
+components list, onboarding jobs, further line of action.
+
+general.css
+reset.css

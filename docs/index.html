@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/pari.css">
     <link rel="stylesheet" href="../css/themes/light-theme.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
+    <div class="container-block">
         <header>
             <div class="navbar navbar-fixed">
                 <div class="container">
@@ -23,7 +24,7 @@
                             <ul class="navbar-list">
                                 <li class="navbar-item"><a class="navbar-link" href="get-started">Documetation</a></li>
                                 <li class="navbar-item"><a class="navbar-link" href="changelog">Changelog</a></li>
-                                <li class="navbar-item"><a class="navbar-link" href="get-started">Download</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="get-started#download">Download</a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,14 +42,15 @@
                     <div class="title-4">Development</div>
                     <ul class="sidebar-list">
                         <li class="sidebar-item"><a class="sidebar-link" href="get-started">Getting Started</a></li>
-                        <li class="sidebar-item"><a class="sidebar-link" href="color-customize">Color Customize</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="customize">Customized themes</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="variables">Variables</a></li>
                     </ul>
                     <!-- Components-->
                     <div class="title-4">Components</div>
                     <ul class="sidebar-list">
                         <p class="text-small" style="margin:16px 0 6px 0;">Basic:</p>
-                        <li class="sidebar-item"><a class="sidebar-link" href="grid">Grid</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="containers.html">Containers</a></li>
+                        <!-- <li class="sidebar-item"><a class="sidebar-link" href="grid">Grid</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="layout">Layout</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="color">Color</a></li>
                         <li class="sidebar-item"><a class="sidebar-link" href="typography">Typography</a></li>
@@ -78,7 +80,7 @@
                             <li class="sidebar-item"><a class="sidebar-link" href="sidebar">Sidebar</a></li>
                         </div>
                         <p class="text-small" style="margin:16px 0 6px 0;">Other:</p>
-                        <li class="sidebar-item"><a class="sidebar-link" href="cards">Card</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="cards">Card</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -88,8 +90,8 @@
                 <div class="container">
                     <div class="content-docs_header">
                         <h1 class="title-1">Introduction</h1><span class="docs-descr">Get familiar with the basic
-                            setup and overview of UImini</span><a class="button button-primary"
-                            href="https://uimini.vedees.ru/uimini.zip">Download</a>
+                            setup and overview of Pari CSS</span><a class="button button-danger"
+                            href="https://github.com/bronzwikgk/pariwip/archive/refs/heads/master.zip">Download</a>
                     </div>
                 </div>
             </section>
@@ -107,11 +109,11 @@
                         <tbody>
                             <tr>
                                 <td><span>/css</span></td>
-                                <td><span>Contains the UImini CSS</span></td>
+                                <td><span>Contains the Pari's CSS Files</span></td>
                             </tr>
                             <tr>
                                 <td><span>/js</span></td>
-                                <td><span>Contains the UImini JavaScrip</span></td>
+                                <td><span>Contains the Pari's JavaScript Files</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -122,20 +124,24 @@
                         style="margin-bottom: 40px;">Add the compiled and minified CSS and JavaScript to the head
                         element of your HTML5 document. For your basic setup, that's it.</span>
                     <div class="content-docs_help"><span class="title-3">Example:</span></div>
-                    <pre>  <code class="hljs http">
-  
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/uimini.min.css"</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/uimini.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-    </span></code>
+                    <pre>
+                        <span class="button-copy" data-target="starterTemp"></span>
+                        <code id="starterTemp" class="hljs http">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;link rel="stylesheet" href="css/pari.css" /&gt;
+        &lt;link rel="stylesheet" href="css/light-theme.css" /&gt; &lt;!-- Replace this with your desired theme file --&gt;
+        &lt;script src="js/pari.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Your work goes here --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </code>
   </pre>
                 </div>
             </section>
@@ -143,33 +149,33 @@
                 <div class="container">
                     <div class="content-docs_header">
                         <h2 class="title-1">Installation (source)</h2><span class="docs-descr">Learn where to
-                            download and how to compile the UImini sources.</span>
+                            download and how to compile the Pari CSS sources.</span>
                     </div>
                     <div class="content-docs_header">
                         <h2 class="title-3">Download latest release</h2><span class="docs-descr">Learn where to
-                            download and how to compile the UImini sources.</span><span class="docs-descr"><a
-                                href="https://github.com/vedees/uimini/releases/latest" style="color: #444ce0;"
+                            download and how to compile the Pari CSS sources.</span><span class="docs-descr"><a
+                                href="https://github.com/bronzwikgk/pari/releases/latest" style="color: #444ce0;"
                                 target="_blank">Latest release</a></span><span class="docs-descr"><a
-                                class="button button-primary" href="https://github.com/vedees/uimini/archive/master.zip"
+                                class="button button-primary" href="https://github.com/bronzwikgk/pariwip/archive/refs/heads/master.zip"
                                 target="_blank">Download (source)</a></span>
                     </div>
 
                     <h2 class="title-3">NPM</h2>
                     <pre>  <code class="hljs coffeescript">
-  <span class="hljs-built_in">npm</span> install uimini
+  <span class="hljs-built_in">npm</span> install pari
       </code>
   </pre>
                     <h2 class="title-3">Yarn</h2>
                     <pre>  <code class="hljs cs">
-  yarn <span class="hljs-keyword">add</span> uimini
+  yarn <span class="hljs-keyword">add</span> pari
       </code>
   </pre>
                     <h2 class="title-3">Build From Source</h2>
-                    <p>Optionally, you can build UImini from its source on Github. To do this, you'll need to have
-                        Node.js and npm installed. I use Gulp to build UImini.</p>
+                    <p>Optionally, you can build Pari CSS from its source on Github. To do this, you'll need to have
+                        Node.js and npm installed. We use pure CSS and Vanilla JS to build Pari CSS.</p>
                     <pre>  <code class="hljs bash">
-  git <span class="hljs-built_in">clone</span> https://github.com/vedees/uimini.git
-  <span class="hljs-built_in">cd</span> uimini
+  git <span class="hljs-built_in">clone</span> https://github.com/bronzwikgk/pari.live.git
+  <span class="hljs-built_in">cd</span> pari
   npm install
   npm start
       </code>
@@ -183,6 +189,7 @@
     </div>
 
 
+    <script src="../js/pari.js"></script>
 </body>
 
 </html>

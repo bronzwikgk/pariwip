@@ -1,8 +1,10 @@
 .container-block {
     display: block;
     position: relative;
-    width: calc(100%-5px);
+    width: calc(100%-10px);
     height: auto;
+    padding: 10px;
+    border-radius: 10px;
     margin: 5px;
 }
 
@@ -13,6 +15,8 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
@@ -32,6 +36,8 @@
     position: absolute;
     z-index: 9;
     border: 1px solid #d3d3d3;
+    padding: 10px;
+    border-radius: 10px;
     cursor: move;
 }
 
@@ -52,20 +58,24 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .container-resizable {
     position: relative;
-    border: 5px solid rgba(119, 119, 119, 0.658);
+    box-sizing: border-box;
+    border: 5px solid rgba(119, 119, 119, 0.658) ;
     margin: 10px;
     max-width: calc(100vw - 20px);
     max-height: calc(100vh - 20px);
     padding: 10px;
+    overflow: hidden;
 }
 
 .container-resizable>.resizer {
     /* All resizers are positioned absolutely inside the element */
     position: absolute;
+    z-index: 99;
+    background-color: rgb(255, 0, 0);
 }
 
 /* Placed at the bottom side */
-.container-resizable>.resizer.resizer-b {
+.container-resizable>.resizer-b {
     /* background-color: rgba(255, 75, 20, 0.356); */
     bottom: -5px;
     cursor: s-resize;
@@ -75,7 +85,7 @@
 }
 
 /* Placed at the right side */
-.container-resizable>.resizer.resizer-r {
+.container-resizable>.resizer-r {
     /* background-color: rgba(255, 75, 20, 0.356); */
     cursor: e-resize;
     height: 100%;
@@ -85,7 +95,7 @@
 }
 
 /* Placed at the right side */
-.container-resizable>.resizer.resizer-br {
+.container-resizable>.resizer-br {
     cursor: se-resize;
     height: 5px;
     width: 5px;
@@ -96,24 +106,29 @@
 /* /////////////////////////////////////////////////////////////////////////////////////// */
 .container-collapsible {
     position: relative;
-    padding: 0 18px 20px 18px;
-    background-color: white;
+    box-sizing: border-box;
+
+    /* background-color: var(--default-bg-color); */
     overflow: hidden;
 }
 
 .container-collapsible.collapse-top {
-    max-height: 0px;
-    transition: max-height 0.2s ease-out;
+    height: 0px;
+    /* opacity: 0; */
+    transition: height 0.2s ease-out;
 }
 
 .container-collapsible * {
     position: relative;
 }
+/* .container-collapsible::before{
+    content: '\f021';
+} */
 
-.container-collapsible>.collapse-icon:first-child {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.collapse-icon{
+    position: relative;
+    left: 0;
+    padding: 5px 20px;
     background-color: #eee;
     box-sizing: border-box;
     width: 100px;

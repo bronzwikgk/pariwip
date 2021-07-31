@@ -15,6 +15,7 @@
 
 /* Components */
 @import url('components/containers.css');
+@import url('components/accordian.css');
 /* grid */
 @import url('grid/columns.css');
 

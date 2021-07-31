@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/pari.css">
+    <link rel="stylesheet" href="../css/themes/light-theme.css">
+</head>
+
+<body>
+
+    <div class="container-block">
+        <header>
+            <div class="navbar navbar-fixed">
+                <div class="container">
+                    <div class="navbar-content"><a class="header-logo" href="index.html">Pari</a>
+                        <div class="button-burger"><span class="line line-1"></span><span
+                                class="line line-2"></span><span class="line line-3"></span></div>
+                        <div class="navbar-list__wrapper">
+                            <ul class="navbar-list">
+                                <li class="navbar-item"><a class="navbar-link" href="get-started">Documetation</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="changelog">Changelog</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="get-started#download">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sidebar-open-button">
+            <div class="button-burger"><span class="line line-1"></span><span class="line line-2"></span><span
+                    class="line line-3"></span></div>
+        </div>
+        <div class="sidebar">
+            <div class="container">
+                <div class="sidebar-content">
+                    <!-- Development-->
+                    <div class="title-4">Development</div>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item"><a class="sidebar-link" href="get-started">Getting Started</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="customize">Customized themes</a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="variables">Variables</a></li>
+                    </ul>
+                    <!-- Components-->
+                    <div class="title-4">Components</div>
+                    <ul class="sidebar-list">
+                        <p class="text-small" style="margin:16px 0 6px 0;">Basic:</p>
+                        <li class="sidebar-item"><a class="sidebar-link" href="">Containers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper content-wrapper--sidebar content-wrapper--fix-header">
+            <h1 class="title-1">Containers</h1>
+            <div>
+                <p>Containers are made to hold elements, components, data, and even containers also.</p> <br>
+                <p>These are empty templates to put in data.</p> <br>
+                <p>There are various types of containers in pari:</p>
+                <br>
+
+
+                <div>
+                    <h3 class="title-3"> Block Container</h3>
+                    <div class="container-block" style="border: 1px solid var(--default-border-color);"> This is some
+                        block container</div>
+                    <pre>
+                    <span class="button-copy" data-target="blockContainer"></span>
+<code id="blockContainer">
+&lt;div class="container-block"&gt; 
+    This is some block container
+    &lt;!-- Put your content here --&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+                </div>
+
+                <div>
+                    <h3 class="title-3"> Float Container</h3>
+                    <div class="container-float" style="border: 1px solid var(--default-border-color); right: 10px;">
+                        This is some floating container</div>
+                    <pre>
+                    <span class="button-copy" data-target="floatContainer"></span>
+<code id="floatContainer">
+&lt;div class="container-float"&gt; 
+    This is some floating container
+    &lt;!-- Put your content here --&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+                </div>
+
+                <div>
+                    <h3 class="title-3"> Flex Container</h3>
+                    <div class="container-flex"
+                        style="border: 1px solid var(--default-border-color); max-width: 140px;">
+                        <span
+                            style="border: 1px solid var(--alt-border-color); background-color: rgb(96, 159, 161);">Item1</span>
+                        <span
+                            style="border: 1px solid var(--alt-border-color); background-color: rgb(95, 160, 109);">Item2</span>
+                        <span
+                            style="border: 1px solid var(--alt-border-color); background-color: rgb(156, 160, 95);">Item3</span>
+                        <span
+                            style="border: 1px solid var(--alt-border-color); background-color: rgb(125, 95, 160);">Item4</span>
+                    </div>
+
+                    <pre>
+                        <span class="button-copy" data-target="flexContainer"></span>
+<code id="flexContainer">
+&lt;div class="container-flex" style="max-width: 100%;"&gt; 
+    This is some flex container
+    &lt;!-- Put your content here --&gt;
+&lt;/div&gt;
+    </code>
+                    </pre>
+                </div>
+
+                <div>
+                    <h3 class="title-3"> Pop Container</h3>
+                <div class="container-pop" style="border: 1px solid var(--default-border-color);"> This is some pop container (u can drag it). </div>
+
+                    <pre>
+                    <span class="button-copy" data-target="popContainer"></span>
+<code id="popContainer">
+&lt;div class="container-pop"&gt; 
+    This is some pop container (u can drag it).
+    &lt;!-- Put your content here --&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+                </div>
+
+                <div>
+                    <h3 class="title-3"> Resizable Container</h3>
+                    <div class="container-resizable"> This is some Resizable container</div>
+
+                    <pre>
+                    <span class="button-copy" data-target="resizableContainer"></span>
+<code id="resizableContainer">
+&lt;div class="container-resizable"&gt; 
+    This is some Resizable container
+    &lt;!-- Put your content here --&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+                </div>
+
+                <div>
+                    <h3 class="title-3"> Collapsible Container</h3>
+                <div class="container-collapsible collapse-top" style="border: 1px solid var(--default-border-color);">
+                    This is some collapse collapse-top container</div>
+
+                    <pre>
+                    <span class="button-copy" data-target="collapsibleContainer"></span>
+<code id="collapsibleContainer">
+&lt;div class="container-collapsible collapse-top"&gt; 
+    This is some collapsible collapse-top container
+    &lt;!-- Put your content here --&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+                </div>
+
+
+
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/pari.js"></script>
+</body>
+
+</html>

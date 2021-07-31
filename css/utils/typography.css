@@ -1,49 +1,49 @@
-.ui-title-1,
-.ui-title-2,
-.ui-title-3,
-.ui-title-4 {
+.title-1,
+.title-2,
+.title-3,
+.title-4 {
   display: block;
   font-weight: normal;
   color: var(--default-font-color);
   margin-bottom: .4em;
 }
 
-.ui-title-1 {
+.title-1 {
   font-size: var(--title-1-font-size);
 }
 
-.ui-title-2 {
+.title-2 {
   font-size: var(--title-2-font-size);
 }
 
-.ui-title-3 {
+.title-3 {
   font-size: var(--title-3-font-size);
 }
 
-.ui-title-4 {
+.title-4 {
   font-size: var(--title-4-font-size);
 }
 
-.ui-text-regular {
+.text-regular {
   font-size: var(--default-font-size);
   color: var(--regular-color);
 }
 
-.ui-text-small {
+.text-small {
   font-size: var(--small-font-size);
   color: var(--regular-light-color);
 }
 
-.ui-text-smaller {
+.text-smaller {
   font-size: var(--down-font-size);
   color: var(--placeholder-color);
 }
 
-.ui-text-hide {
+.text-hide {
   color: var(--placeholder-color);
 }
 
-.ui-highlight {
+.highlight {
   font-weight: 700;
   padding: .4px 3px;
   margin: 0 6px;
@@ -51,46 +51,46 @@
 }
 
 @media screen and (max-width: 980px) {
-  .ui-title-1{
+  .title-1{
     font-size: calc(var(--title-1-font-size) - 20%);
   }
-  .ui-title-2{
+  .title-2{
     font-size: calc(var(--title-2-font-size) - 20%);
   }
-  .ui-title-3{
+  .title-3{
     font-size: calc(var(--title-3-font-size) - 20%);
   }
-  .ui-title-4{
+  .title-4{
 
   }
 }
 
 @media screen and (max-width: 768px) {
-  .ui-title-1{
+  .title-1{
     font-size: calc(var(--title-1-font-size) - 30%);
   }
-  .ui-title-2{
+  .title-2{
     font-size: calc(var(--title-2-font-size) - 30%);
   }
-  .ui-title-3{
+  .title-3{
     font-size: calc(var(--title-3-font-size) - 30%);
   }
-  .ui-title-4{
+  .title-4{
     
   }
 }
 
 @media screen and (max-width: 480px) {
-  .ui-title-1{
+  .title-1{
     font-size: calc(var(--title-1-font-size) - 40%);
   }
-  .ui-title-2{
+  .title-2{
     font-size: calc(var(--title-2-font-size) - 40%);
   }
-  .ui-title-3{
+  .title-3{
     font-size: calc(var(--title-3-font-size) - 40%);
   }
-  .ui-title-4{
+  .title-4{
     
   }
 }

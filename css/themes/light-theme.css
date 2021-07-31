@@ -13,6 +13,7 @@
     --placeholder-color: var(--regular-light-color);
     --default-border-color: var(--light-color);
     --alt-border-color: var(--dark-color);
+    --default-button-bg-color: var(--xtra-light-color);
     /* Link Color */
     --default-link-color-unvisited: var(--darker-color);
     --default-link-color-visited: var(--dark-color);

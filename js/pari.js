@@ -199,21 +199,6 @@ function resizeElement(elem) {
     x = 0,
     y = 0;
 
-  // to add resizers
-  (function () {
-    [
-      ["resizer-r", "x"],
-      ["resizer-b", "y"],
-      ["resizer-br", "xy"]
-    ].forEach(resizer => {
-      let resizerElem = document.createElement('span');
-      resizerElem.className = `resizer ${resizer[0]}`;
-      resizerElem.setAttribute('data-side', `${resizer[1]}`);
-      resizerElem.addEventListener('mousedown', mouseDownHandler);
-      elem.prepend(resizerElem);
-    });
-  })();
-
   // Handle the mousedown event
   // that's triggered when user drags the resizer
   const mouseDownHandler = function (e) {
@@ -252,6 +237,22 @@ function resizeElement(elem) {
     document.removeEventListener('mousemove', mouseMoveHandler);
     document.removeEventListener('mouseup', mouseUpHandler);
   };
+
+  // to add resizers
+  (function () {
+    [
+      ["r", "x"],
+      ["b", "y"],
+      ["br", "xy"]
+    ].forEach(resizer => {
+      let resizerElem = document.createElement('span');
+      resizerElem.className = `resizer resizer-${resizer[0]}`;
+      resizerElem.setAttribute('data-side', `${resizer[1]}`);
+      resizerElem.addEventListener('mousedown', mouseDownHandler);
+      elem.append(resizerElem);
+    });
+  })();
+
 }
 
 // Make elements resizable
@@ -281,8 +282,8 @@ function dragElement(elem) {
 
   function elementDrag(e) {
     var dx = 0,
-        dy = 0,
-        styles = window.getComputedStyle(elem);
+      dy = 0,
+      styles = window.getComputedStyle(elem);
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
@@ -313,8 +314,8 @@ function stackElement(elem) {
   var stackingIndex = parseInt(elem.getAttribute('data-stack-index'));
 
   elem.style.zIndex = stackingIndex;
-  elem.style.left = 5*stackingIndex + "px";
-  elem.style.top = 5*stackingIndex + "px";
+  elem.style.left = 5 * stackingIndex + "px";
+  elem.style.top = 5 * stackingIndex + "px";
 
   dragElement(elem);
 
@@ -328,21 +329,37 @@ stackedElems.forEach(stackedElem => {
 ////////////////////////////////////////////////////////////////////////////////////////////
 // collapsible Elements
 function collapseElement(elem) {
-  var collapseIcon = document.createElement('span');
-  collapseIcon.className = "collapse-icon";
-  collapseIcon.innerHTML = "\\/";
-  collapseIcon.addEventListener('click', collapseHandler);
-  elem.prepend(collapseIcon);
 
-  function collapseHandler() {
-      collapseIcon.classList.toggle('active');
+  function collapseHandler(e) {
+    let targetId = this.getAttribute('data-target'),
+      target = document.getElementById(targetId);
+    this.classList.toggle('active');
 
-      if (parseInt(elem.style.maxHeight)> 10) {
-          elem.style.maxHeight = "0px";
-      } else {
-          elem.style.maxHeight = elem.scrollHeight + "px";
-      }
+    if (this.className.includes('active')) {
+      target.style.height = elem.scrollHeight + "px";
+      // target.style.opacity = 1;
+    } else {
+      target.style.height = "0px";
+      // target.style.opacity = 0;
+    }
   }
+
+  (function () {
+
+    if (!elem.id || elem.id === "") {
+      elem.id = "collapsible-container-" + (Math.floor(Math.random() * Math.pow(36, 5))).toString(36).padStart(5, '0')
+    }
+
+    var collapseIcon = document.createElement('span');
+    collapseIcon.className = "collapse-icon";
+    collapseIcon.setAttribute('data-target', elem.id);
+    collapseIcon.innerHTML = `<i class="fas fa-chevron-down"></i>`;
+    collapseIcon.addEventListener('click', collapseHandler);
+    elem.parentElement.insertBefore(collapseIcon, elem);
+  }) ();
+
+
+
 }
 
 // var collapseIcons = ;
@@ -350,4 +367,59 @@ function collapseElement(elem) {
 const collapsibles = document.querySelectorAll(".container-collapsible");
 collapsibles.forEach(collapsible => {
   collapseElement(collapsible);
+});
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+async function copyFrom(elem) {
+  var data = null;
+  if (elem.constructor.name.includes('HTML')) {
+    data = elem.innerText.trim();
+    await navigator.clipboard.writeText(data);
+    console.log('data copied successfully');
+  } else if (elem.constructor.name.includes('Object')) {
+    data = JSON.stringify(elem);
+    await navigator.clipboard.writeText(data);
+    console.log('data copied successfully');
+  } else {
+    data = elem;
+    await navigator.clipboard.write(data);
+    console.log('data copied successfully');
+  }
+
+}
+
+async function printClipboardData() {
+  // show all data in console
+  let result = await navigator.permissions.query({
+    name: "clipboard-read"
+  });
+  if (result.state == "granted" || result.state == "prompt") {
+    let data = await navigator.clipboard.read()
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].types.includes("text/plain")) {
+        let blob = await data[i].getType("text/plain")
+        console.log(await blob.text());
+        alert("Clipboard contains non-image data. Unable to access it.");
+      } else if (data[i].types.includes("image/png")) {
+        data[i].getType("image/png").then((blob) => {
+          let imgElem = document.createElement('img');
+          imgElem.src = URL.createObjectURL(blob);
+          document.body.append(imgElem);
+        });
+      } else {
+        console.log(data[i]);
+      }
+    }
+  }
+}
+
+const cpyBtns = document.querySelectorAll('.button-copy');
+cpyBtns.forEach(cpyBtn => {
+  cpyBtn.classList.add('fas', 'fa-copy');
+  cpyBtn.addEventListener('click', function (e) {
+    let targetId = this.getAttribute('data-target'),
+      target = document.getElementById(targetId);
+    copyFrom(target);
+  })
 })
