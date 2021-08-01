@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/pari.css">
-    <link rel="stylesheet" href="../css/themes/light-theme.css">
+    <link rel="stylesheet" href="../css/themes/light-theme.css"> -->
     <style>
         .elem-container-title {
             position: relative;
@@ -19,6 +19,12 @@
             padding: 10px;
             margin: 10px;
             margin-bottom: 0px;
+        }
+
+        .elem-description {
+            position: relative;
+            text-indent: 100px;
+            margin: 10px;
         }
 
         .elem-container {
@@ -51,11 +57,14 @@
 
 
         <!-- <span class="elem-container-title">&lt;Title&gt;</span>
+        <p class="elem-description"> Description </p>
         <div class="elem-container">
             This is Container
         </div> -->
 
         <span class="elem-container-title"> &lt;address&gt; </span>
+        <p class="elem-description"> The <code>address</code> HTML element indicates that the enclosed HTML provides
+            contact information for a person or people, or for an organization. </p>
         <div class="elem-container">
             <address>
                 <a href="mailto:jim@rock.com">jim@rock.com</a><br>
@@ -64,6 +73,11 @@
         </div>
 
         <span class="elem-container-title"> &lt;article&gt;</span>
+        <p class="elem-description"> The <code>article</code> HTML element represents a self-contained composition in a
+            document, page, application, or site, which is intended to be independently distributable or reusable (e.g.,
+            in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product
+            card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+        </p>
         <div class="elem-container">
             <article class="forecast">
                 <h1>Weather forecast for Seattle</h1>
@@ -83,6 +97,9 @@
         </div>
 
         <span class="elem-container-title">&lt;aside&gt;</span>
+        <p class="elem-description"> The <code>aside</code> HTML element represents a portion of a document whose
+            content is only indirectly related to the document's main content. Asides are frequently presented as
+            sidebars or call-out boxes. </p>
         <div class="elem-container">
             <aside>
                 <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
@@ -90,6 +107,9 @@
         </div>
 
         <span class="elem-container-title">&lt;footer&gt;</span>
+        <p class="elem-description"> The <code>footer</code> HTML element represents a footer for its nearest sectioning
+            content or sectioning root element. A <code>footer</code> typically contains information about the author of
+            the section, copyright data or links to related documents. </p>
         <div class="elem-container">
             <footer>
                 <p>© 2018 Gandalf</p>
@@ -97,6 +117,9 @@
         </div>
 
         <span class="elem-container-title">&lt;header&gt;</span>
+        <p class="elem-description"> The <code>header</code> HTML element represents introductory content, typically a
+            group of introductory or navigational aids. It may contain some heading elements but also a logo, a search
+            form, an author name, and other elements. </p>
         <div class="elem-container">
             <header class="page-header">
                 <h1>Cute Puppies Express!</h1>
@@ -104,6 +127,8 @@
         </div>
 
         <span class="elem-container-title">&lt;h1&gt; - &lt;h6&gt;</span>
+        <p class="elem-description"> The <code>h1</code> to <code>h6</code> HTML elements represent six levels of
+            section headings. <code>h1</code> is the highest section level and <code>h6</code> is the lowest. </p>
         <div class="elem-container">
             H1: <h1>Beetles</h1>
             H2: <h2>External morphology</h2>
@@ -114,6 +139,9 @@
         </div>
 
         <span class="elem-container-title">&lt;main&gt;</span>
+        <p class="elem-description"> The <code>main</code> HTML element represents the dominant content of the body of a
+            document. The main content area consists of content that is directly related to or expands upon the central
+            topic of a document, or the central functionality of an application. </p>
         <div class="elem-container">
             <main>
                 <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent
@@ -125,6 +153,9 @@
         </div>
 
         <span class="elem-container-title">&lt;nav&gt;</span>
+        <p class="elem-description"> The <code>nav</code> HTML element represents a section of a page whose purpose is
+            to provide navigation links, either within the current document or to other documents. Common examples of
+            navigation sections are menus, tables of contents, and indexes. </p>
         <div class="elem-container">
             <nav class="crumbs">
                 <ol>
@@ -136,6 +167,9 @@
         </div>
 
         <span class="elem-container-title">&lt;section&gt;</span>
+        <p class="elem-description"> The <code>section</code> HTML element represents a generic standalone section of a
+            document, which doesn't have a more specific semantic element to represent it. Sections should always have a
+            heading, with very few exceptions. </p>
         <div class="elem-container">
             <section>
                 <h2>Introduction</h2>
@@ -143,19 +177,34 @@
             </section>
         </div>
 
-        <span class="elem-container-title">&lt;figure&gt; , &lt;figcaption&gt; , &lt;blockquote&gt; , &lt;cite&gt;</span>
+        <span class="elem-container-title">&lt;figure&gt; , &lt;figcaption&gt; , &lt;blockquote&gt;</span>
+        <p class="elem-description"> The <code>figure</code> HTML element represents self-contained content, potentially
+            with an optional caption, which is specified using the figcaption element. The figure, its caption, and its
+            contents are referenced as a single unit. </p>
+        <p class="elem-description"> The <code>figcaption</code> HTML element represents a caption or legend describing
+            the rest of the contents of its parent figure element. </p>
+        <p class="elem-description"> The <code>blockquote</code> HTML element indicates that the enclosed text is an
+            extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A
+            URL for the source of the quotation may be given using the cite attribute, while a text representation of
+            the source can be given using the cite element. </p>
         <div class="elem-container">
             <figure>
                 <blockquote cite="https://www.huxley.net/bnw/four.html">
-                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and
-                        you’re
-                        pierced.</p>
+                    Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re
+                    pierced.
                 </blockquote>
-                <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+                <figcaption>—Aldous Huxley, Brave New World</figcaption>
             </figure>
         </div>
 
         <span class="elem-container-title">&lt;dl&gt; , &lt;dt&gt; , &lt;dd&gt;</span>
+        <p class="elem-description"> The <code>dd</code> HTML element provides the description, definition, or value for
+            the preceding term (dt) in a description list (dl). </p>
+        <p class="elem-description"> The <code>dl</code> HTML element represents a description list. The element
+            encloses a list of groups of terms (specified using the dt element) and descriptions (provided by dd
+            elements). Common uses for this element are to implement a glossary or to display metadata (a list of
+            key-value pairs).</p>
+        <p class="elem-description"> Description </p>
         <div class="elem-container">
             <dl>
                 <dt>Beast of Bodmin</dt>
@@ -170,27 +219,44 @@
         </div>
 
         <span class="elem-container-title">&lt;div&gt;</span>
+        <p class="elem-description"> The <code>div</code> HTML element is the generic container for flow content. It has
+            no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to
+            it, or some kind of layout model like Flexbox is applied to its parent element). </p>
         <div class="elem-container">
             <div> This is div </div>
         </div>
 
         <span class="elem-container-title">&lt;hr&gt;</span>
+        <p class="elem-description"> The <code>hr</code> HTML element represents a thematic break between
+            paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.
+        </p>
         <div class="elem-container">
             <hr>
         </div>
 
         <span class="elem-container-title">&lt;img&gt;</span>
+        <p class="elem-description"> The <code>img</code> HTML element embeds an image into the document. </p>
         <div class="elem-container">
             <img src="https://interactive-examples.mdn.mozilla.net/media/examples/leopard.jpg"
                 alt="An intimidating leopard." height="150">
         </div>
 
         <span class="elem-container-title">&lt;p&gt;</span>
+        <p class="elem-description"> The <code>p</code> HTML element represents a paragraph. Paragraphs are usually
+            represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or
+            first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as
+            images or form fields. </p>
         <div class="elem-container">
             <p>Beware of the leopard</p>
         </div>
 
         <span class="elem-container-title">&lt;ul&gt; , &lt;li&gt;</span>
+        <p class="elem-description"> The <code>ul</code> HTML element represents an unordered list of items, typically
+            rendered as a bulleted list. </p>
+        <p class="elem-description"> The <code>li</code> HTML element is used to represent an item in a list. It must be
+            contained in a parent element: an ordered list (ol), an unordered list (ul), or a menu (menu). In menus and
+            unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually
+            displayed with an ascending counter on the left, such as a number or letter. </p>
         <div class="elem-container">
             <ul>
                 <li>Neil Armstrong</li>
@@ -202,6 +268,8 @@
         </div>
 
         <span class="elem-container-title">&lt;ol&gt;</span>
+        <p class="elem-description"> The <code>ol</code> HTML element represents an ordered list of items — typically
+            rendered as a numbered list. </p>
         <div class="elem-container">
             <ol>
                 <li>Neil Armstrong</li>
@@ -213,6 +281,9 @@
         </div>
 
         <span class="elem-container-title">&lt;pre&gt;</span>
+        <p class="elem-description"> The <code>pre</code> HTML element represents preformatted text which is to be
+            presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or
+            "monospaced, font. Whitespace inside this element is displayed as written. </p>
         <div class="elem-container">
             <pre>
                 ( ͡° ͜ʖ ͡°)︻̷┻̿═━一-                 皿≡≡≡≡≡≡≡皿            - ╾━╤デ╦︻(˙ ͜ʟ˙ )
@@ -222,38 +293,59 @@
         </div>
 
         <span class="elem-container-title">&lt;a&gt;</span>
+        <p class="elem-description"> The <code>a</code> HTML element (or anchor element), with its href attribute,
+            creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL
+            can address. </p>
         <div class="elem-container">
             <a href="">Website</a>
         </div>
 
         <span class="elem-container-title">&lt;abbr&gt;</span>
+        <p class="elem-description"> The <code>abbr</code> HTML element represents an abbreviation or acronym; the
+            optional title attribute can provide an expansion or description for the abbreviation. </p>
         <div class="elem-container">
             <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr
                     title="HyperText Markup Language">HTML</abbr>.</p>
         </div>
 
         <span class="elem-container-title">&lt;b&gt;</span>
+        <p class="elem-description"> The <code>b</code> HTML element is used to draw the reader's attention to the
+            element's contents, which are not otherwise granted special importance. This was formerly known as the
+            Boldface element, and most browsers still draw the text in boldface. However, you should not use
+            <code>b</code> for styling text; instead, you should use the CSS font-weight property to create boldface
+            text, or the strong element to indicate that text is of special importance. </p>
         <div class="elem-container">
             <b>chemistry</b>
         </div>
 
         <span class="elem-container-title">&lt;bdi&gt;</span>
+        <p class="elem-description"> The <code>bdi</code> HTML element tells the browser's bidirectional algorithm to
+            treat the text it contains in isolation from its surrounding text. It's particularly useful when a website
+            dynamically inserts some text and doesn't know the directionality of the text being inserted. </p>
         <div class="elem-container">
             <bdi class="name">Evil Steven</bdi>: 1st place <br>
             <bdi class="name">الرجل القوي إيان</bdi>: 2nd place
         </div>
 
         <span class="elem-container-title">&lt;bdo&gt;</span>
+        <p class="elem-description"> The <code>bdo</code> HTML element overrides the current directionality of text, so
+            that the text within is rendered in a different direction. </p>
         <div class="elem-container">
             <p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
         </div>
 
         <span class="elem-container-title">&lt;cite&gt;</span>
+        <p class="elem-description"> The <code>cite</code> HTML element is used to describe a reference to a cited
+            creative work, and must include the title of that work. The reference may be in an abbreviated form
+            according to context-appropriate conventions related to citation metadata. </p>
         <div class="elem-container">
             <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite>
         </div>
 
         <span class="elem-container-title">&lt;code&gt;</span>
+        <p class="elem-description"> The <code>code</code> HTML element displays its contents styled in a fashion
+            intended to indicate that the text is a short fragment of computer code. By default, the content text is
+            displayed using the user agent default monospace font. </p>
         <div class="elem-container">
             <code>
                 if(!Mona.pushes(child)){
@@ -264,11 +356,16 @@
         </div>
 
         <span class="elem-container-title">&lt;data&gt;</span>
+        <p class="elem-description"> The <code>data</code> HTML element links a given piece of content with a
+            machine-readable translation. If the content is time- or date-related, the time element must be used. </p>
         <div class="elem-container">
             <data value="398">Mini Ketchup</data>
         </div>
 
         <span class="elem-container-title">&lt;dfn&gt;</span>
+        <p class="elem-description"> The <code>dfn</code> HTML element is used to indicate the term being defined within
+            the context of a definition phrase or sentence. The p element, the dt/dd pairing, or the section element
+            which is the nearest ancestor of the <code>dfn</code> is considered to be the definition of the term. </p>
         <div class="elem-container">
             <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or
                 documents.
@@ -276,27 +373,45 @@
         </div>
 
         <span class="elem-container-title">&lt;em&gt;</span>
+        <p class="elem-description"> The <code>em</code> HTML element marks text that has stress emphasis. The
+            <code>em</code> element can be nested, with each level of nesting indicating a greater degree of emphasis.
+        </p>
         <div class="elem-container">
             <p>We <em>had</em> to do something about it.</p>
         </div>
 
         <span class="elem-container-title">&lt;i&gt;</span>
+        <p class="elem-description"> The <code>i</code> HTML element represents a range of text that is set off from the
+            normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among
+            others. Historically, these have been presented using italicized type, which is the original source of the
+            <code>i</code> naming of this element. </p>
         <div class="elem-container">
             <p><i class="latin">Musa</i> is one of two or three genera in the family <i class="latin">Musaceae</i>; it
                 includes bananas and plantains.</p>
         </div>
 
         <span class="elem-container-title">&lt;kbd&gt;</span>
+        <p class="elem-description"> The <code>kbd</code> HTML element represents a span of inline text denoting textual
+            user input from a keyboard, voice input, or any other text entry device. By convention, the user agent
+            defaults to rendering the contents of a <code>kbd</code> element using its default monospace font, although
+            this is not mandated by the HTML standard. </p>
         <div class="elem-container">
             <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open developer tools.</p>
         </div>
 
         <span class="elem-container-title">&lt;mark&gt;</span>
+        <p class="elem-description"> The <code>mark</code> HTML element represents text which is marked or highlighted
+            for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing
+            context. </p>
         <div class="elem-container">
             <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
         </div>
 
         <span class="elem-container-title">&lt;q&gt;</span>
+        <p class="elem-description"> The <code>q</code> HTML element indicates that the enclosed text is a short inline
+            quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is
+            intended for short quotations that don't require paragraph breaks; for long quotations use the blockquote
+            element. </p>
         <div class="elem-container">
             <p>When Dave asks HAL to open the pod bay door, HAL answers: <q
                     cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do
@@ -304,6 +419,16 @@
         </div>
 
         <span class="elem-container-title">&lt;ruby&gt; , &lt;rp&gt; , &lt;rt&gt;</span>
+        <p class="elem-description"> The <code>ruby</code> HTML element represents small annotations that are rendered
+            above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It
+            can also be used for annotating other kinds of text, but this usage is less common. </p>
+        <p class="elem-description"> The <code>rp</code> HTML element is used to provide fall-back parentheses for
+            browsers that do not support display of ruby annotations using the ruby element. One <code>rp</code> element
+            should enclose each of the opening and closing parentheses that wrap the <code>rt</code> element that
+            contains the annotation's text. </p>
+        <p class="elem-description"> The <code>rt</code> HTML element specifies the ruby text component of a ruby
+            annotation, which is used to provide pronunciation, translation, or transliteration information for East
+            Asian typography. The <code>rt</code> element must always be contained within a ruby element. </p>
         <div class="elem-container">
             <ruby>
                 漢 <rp>(</rp>
@@ -316,28 +441,45 @@
         </div>
 
         <span class="elem-container-title">&lt;s&gt;</span>
+        <p class="elem-description"> The <code>s</code> HTML element renders text with a strikethrough, or a line
+            through it. Use the <code>s</code> element to represent things that are no longer relevant or no longer
+            accurate. However, <code>s</code> is not appropriate when indicating document edits; for that, use the del
+            and ins elements, as appropriate. </p>
         <div class="elem-container">
             <s>There will be a few tickets available at the box office tonight.</s>
             <p>SOLD OUT!</p>
         </div>
 
         <span class="elem-container-title">&lt;samp&gt;</span>
+        <p class="elem-description"> The <code>samp</code> HTML element is used to enclose inline text which represents
+            sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's
+            default monospaced font (such as Courier or Lucida Console). </p>
         <div class="elem-container">
             <samp>Keyboard not found <br>Press F1 to continue</samp>
         </div>
 
         <span class="elem-container-title">&lt;small&gt;</span>
+        <p class="elem-description"> The <code>small</code> HTML element represents side-comments and small print, like
+            copyright and legal text, independent of its styled presentation. By default, it renders text within it one
+            font-size smaller, such as from small to x-small. </p>
         <div class="elem-container">
             <small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small>
         </div>
 
         <span class="elem-container-title">&lt;span&gt;</span>
+        <p class="elem-description"> The <code>span</code> HTML element is a generic inline container for phrasing
+            content, which does not inherently represent anything. It can be used to group elements for styling purposes
+            (using the class or id attributes), or because they share attribute values, such as lang. It should be used
+            only when no other semantic element is appropriate. <code>span</code> is very much like a div element, but
+            div is a block-level element whereas a <code>span</code> is an inline element. </p>
         <div class="elem-container">
             <span>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span
                     class="ingredient">garlic</span> to a blender and blend into a paste.</span>
         </div>
 
         <span class="elem-container-title">&lt;strong&gt;</span>
+        <p class="elem-description"> The <code>strong</code> HTML element indicates that its contents have strong
+            importance, seriousness, or urgency. Browsers typically render the contents in bold type. </p>
         <div class="elem-container">
             ... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much
             he begs:
@@ -345,40 +487,64 @@
         </div>
 
         <span class="elem-container-title">&lt;sub&gt;</span>
+        <p class="elem-description"> The <code>sub</code> HTML element specifies inline text which should be displayed
+            as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline
+            using smaller text. </p>
         <div class="elem-container">
             Almost every developer's favorite molecule is
             C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."
         </div>
 
         <span class="elem-container-title">&lt;sup&gt;</span>
+        <p class="elem-description"> The <code>sup</code> HTML element specifies inline text which is to be displayed as
+            superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using
+            smaller text. </p>
         <div class="elem-container">
             <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
             a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
         </div>
 
         <span class="elem-container-title">&lt;time&gt;</span>
+        <p class="elem-description"> The <code>time</code> HTML element represents a specific period in time. It may
+            include the datetime attribute to translate dates into machine-readable format, allowing for better search
+            engine results or custom features such as reminders. </p>
         <div class="elem-container">
-            The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.
+            The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's
+            Hyde Park.
         </div>
 
         <span class="elem-container-title">&lt;u&gt;</span>
+        <p class="elem-description"> The <code>u</code> HTML element represents a span of inline text which should be
+            rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a
+            simple solid underline, but may be altered using CSS. </p>
         <div class="elem-container">
             You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.
         </div>
 
         <span class="elem-container-title">&lt;var&gt;</span>
+        <p class="elem-description"> The <code>var</code> HTML element represents the name of a variable in a
+            mathematical expression or a programming context. It's typically presented using an italicized version of
+            the current typeface, although that behavior is browser-dependent. </p>
         <div class="elem-container">
             The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
             <var>w</var> the width and <var>h</var> the height of the box.
         </div>
 
         <span class="elem-container-title">&lt;wbr&gt;</span>
+        <p class="elem-description"> The <code>wbr</code> HTML element represents a word break opportunity—a position
+            within text where the browser may optionally break a line, though its line-breaking rules would not
+            otherwise create a break at that location. </p>
         <div class="elem-container">
             Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz
             Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz
         </div>
 
-            <span class="elem-container-title">&lt;map&gt;</span>
+            <span class="elem-container-title">&lt;map&gt; , &lt;area&gt;</span>
+            <p class="elem-description"> The <code>map</code> HTML element is used with area elements to define an image
+                map (a clickable link area). </p>
+            <p class="elem-description"> The <code>area</code> HTML element defines an area inside an image map that has
+                predefined clickable areas. An image map allows geometric areas on an image to be associated with
+                Hyperlink. </p>
             <div class="elem-container">
                 <map name="infographic">
                     <area shape="rect" coords="184,6,253,27" href="https://mozilla.org" target="_blank" alt="Mozilla" />
@@ -402,6 +568,10 @@
 
 
             <span class="elem-container-title">&lt;audio&gt;</span>
+            <p class="elem-description"> The <code>audio</code> HTML element is used to embed sound content in
+                documents. It may contain one or more audio sources, represented using the src attribute or the source
+                element: the browser will choose the most suitable one. It can also be the destination for streamed
+                media, using a MediaStream. </p>
             <div class="elem-container">
                 <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
                     Your browser does not support the
@@ -409,7 +579,14 @@
                 </audio>
             </div>
 
-            <span class="elem-container-title">&lt;video&gt; , &lt;video&gt;</span>
+            <span class="elem-container-title">&lt;video&gt; , &lt;track&gt;</span>
+            <p class="elem-description"> The <code>video</code> HTML element embeds a media player which supports video
+                playback into the document. You can use <code>video</code> for audio content as well, but the audio
+                element may provide a more appropriate user experience. </p>
+            <p class="elem-description"> The <code>track</code> HTML element is used as a child of the media elements,
+                audio and video. It lets you specify timed text tracks (or time-based data), for example to
+                automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text
+                Tracks. </p>
             <div class="elem-container">
                 <video controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4">
                     <track default kind="captions" srclang="en"
@@ -419,12 +596,17 @@
             </div>
 
             <span class="elem-container-title">&lt;embed&gt;</span>
+            <p class="elem-description"> The <code>embed</code> HTML element embeds external content at the specified
+                point in the document. This content is provided by an external application or other source of
+                interactive content such as a browser plug-in. </p>
             <div class="elem-container">
                 <embed type="video/webm" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
                     width="250" height="200">
             </div>
 
             <span class="elem-container-title">&lt;iframe&gt;</span>
+            <p class="elem-description"> The <code>iframe</code> HTML element represents a nested browsing context,
+                embedding another HTML page into the current one. </p>
             <div class="elem-container">
                 <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
@@ -432,6 +614,10 @@
             </div>
 
             <span class="elem-container-title">&lt;object&gt; , &lt;param&gt;</span>
+            <p class="elem-description"> The <code>object</code> HTML element represents an external resource, which can
+                be treated as an image, a nested browsing context, or a resource to be handled by a plugin. </p>
+            <p class="elem-description"> The <code>param</code> HTML element defines parameters for an object element.
+            </p>
             <div class="elem-container">
                 <object type="application/pdf"
                     data="https://interactive-examples.mdn.mozilla.net/media/examples/In-CC0.pdf" width="250"
@@ -441,6 +627,13 @@
             </div>
 
             <span class="elem-container-title">&lt;picture&gt; , &lt;source&gt;</span>
+            <p class="elem-description"> The <code>picture</code> HTML element contains zero or more source elements and
+                one img element to offer alternative versions of an image for different display/device scenarios. </p>
+            <p class="elem-description"> The <code>source</code> HTML element specifies multiple media resources for the
+                picture, the audio element, or the video element. It is an empty element, meaning that it has no content
+                and does not have a closing tag. It is commonly used to offer the same media content in multiple file
+                formats in order to provide compatibility with a broad range of browsers given their differing support
+                for image file formats and media file formats. </p>
             <div class="elem-container">
                 <picture>
                     <source srcset="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg"
@@ -450,6 +643,9 @@
             </div>
 
             <span class="elem-container-title">&lt;svg&gt;</span>
+            <p class="elem-description"> The <code>svg</code> element is a container that defines a new coordinate
+                system and viewport. It is used as the outermost element of SVG documents, but it can also be used to
+                embed an SVG fragment inside an SVG or HTML document. </p>
             <div class="elem-container">
                 <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
                     <circle cx="50" cy="50" r="40" />
@@ -462,6 +658,10 @@
             </div>
 
             <span class="elem-container-title">&lt;math&gt;</span>
+            <p class="elem-description"> The top-level element in MathML is <code>math</code>. Every valid MathML
+                instance must be wrapped in <code>math</code> tags. In addition you must not nest a second
+                <code>math</code> element in another, but you can have an arbitrary number of other child elements in
+                it. </p>
             <div class="elem-container">
                 <math>
                     <mrow>
@@ -486,6 +686,8 @@
             </div>
 
             <span class="elem-container-title">&lt;canvas&gt;</span>
+            <p class="elem-description"> Use the HTML <code>canvas</code> element with either the canvas scripting API
+                or the WebGL API to draw graphics and animations. </p>
             <div class="elem-container">
                 <canvas width="300" height="300">
                     An alternative text describing what your canvas displays.
@@ -493,6 +695,8 @@
             </div>
 
             <span class="elem-container-title">&lt;noscript&gt;</span>
+            <p class="elem-description"> The <code>noscript</code> HTML element defines a section of HTML to be inserted
+                if a script type on the page is unsupported or if scripting is currently turned off in the browser. </p>
             <div class="elem-container">
                 <noscript>
                     <!-- anchor linking to external file -->
@@ -500,52 +704,84 @@
                 </noscript>
             </div>
 
-            <span class="elem-container-title">&lt;p&gt;</span>
+            <span class="elem-container-title">&lt;portal&gt;</span>
+            <p class="elem-description"> The <code>portal</code> HTML element enables the embedding of another HTML page
+                into the current one for the purposes of allowing smoother navigation into new pages. </p>
             <div class="elem-container">
-                <p>Rocks!</p>
+                <portal id="exampleportal" src="https://www.google.com/"></portal>
             </div>
 
-            <span class="elem-container-title">&lt;blockquote&gt; , &lt;del&gt; , &lt;ins&gt;</span>
+            <span class="elem-container-title">&lt;del&gt; , &lt;ins&gt;</span>
+            <p class="elem-description"> The <code>del</code> HTML element represents a range of text that has been
+                deleted from a document. This can be used when rendering "track changes" or source code diff
+                information, for example. The ins element can be used for the opposite purpose: to indicate text that
+                has been added to the document. </p>
+            <p class="elem-description"> The <code>ins</code> HTML element represents a range of text that has been
+                added to a document. You can use the del element to similarly represent a range of text that has been
+                deleted from the document. </p>
             <div class="elem-container">
-                <blockquote>
-                    There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del>
-                    <ins>running it</ins> makes it so.
-                </blockquote>
+                There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del>
+                <ins>running it</ins> makes it so.
             </div>
 
-            <span class="elem-container-title">&lt;table&gt; , &lt;caption&gt; , &lt;thead&gt; , &lt;tbody&gt; , &lt;tr&gt; , &lt;th&gt;</span>
+            <span class="elem-container-title">&lt;table&gt; , &lt;caption&gt; , &lt;colgroup&gt; , &lt;col&gt; ,
+                &lt;thead&gt; , &lt;tbody&gt; , &lt;tfoot&gt; , &lt;th&gt; , &lt;tr&gt; , &lt;td&gt;</span>
+            <p class="elem-description"> The <code>table</code> HTML element represents tabular data — that is,
+                information presented in a two-dimensional table comprised of rows and columns of cells containing data.
+            </p>
+            <p class="elem-description">The <code>caption</code> HTML element specifies the caption (or title) of a
+                table. </p>
+            <p class="elem-description"> The <code>colgroup</code> HTML element defines a group of columns within a
+                table. </p>
+            <p class="elem-description"> The <code>col</code> HTML element defines a column within a table and is used
+                for defining common semantics on all common cells. It is generally found within a colgroup element. </p>
+            <p class="elem-description"> The <code>thead</code> HTML element defines a set of rows defining the head of
+                the columns of the table. </p>
+            <p class="elem-description"> The <code>tbody</code> HTML element encapsulates a set of table rows (tr
+                elements), indicating that they comprise the body of the table (table). </p>
+            <p class="elem-description"> The <code>tfoot</code> HTML element defines a set of rows summarizing the
+                columns of the table. </p>
+            <p class="elem-description"> The <th> HTML element defines a cell as header of a group of table cells. The
+                    exact nature of this group is defined by the scope and headers attributes. </p>
+            <p class="elem-description"> The <tr> HTML element defines a row of cells in a table. The row's cells can
+                    then be established using a mix of td (data cell) and th (header cell) elements. </p>
+            <p class="elem-description"> The <td> HTML element defines a cell of a table that contains data. It
+                    participates in the table model. </p>
             <div class="elem-container">
                 <table>
-                    <caption>He-Man and Skeletor facts</caption>
+                    <caption>Accounts</caption>
+                    <colgroup>
+                        <col span="1" class="items">
+                        <col span="1" class="expenditure">
+                    </colgroup>
                     <thead>
                         <tr>
-                            <td> </td>
-                            <th scope="col" class="heman">He-Man</th>
-                            <th scope="col" class="skeletor">Skeletor</th>
+                            <th scope="col">Items</th>
+                            <th scope="col">Expenditure</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
-                            <th scope="row">Role</th>
-                            <td>Hero</td>
-                            <td>Villain</td>
+                            <th scope="row">Donuts</th>
+                            <td>3,000</td>
                         </tr>
                         <tr>
-                            <th scope="row">Weapon</th>
-                            <td>Power Sword</td>
-                            <td>Havoc Staff</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Dark secret</th>
-                            <td>Expert florist</td>
-                            <td>Cries at romcoms</td>
+                            <th scope="row">Stationery</th>
+                            <td>18,000</td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Totals</th>
+                            <td>21,000</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
 
             <span class="elem-container-title">&lt;button&gt;</span>
+            <p class="elem-description"> The <code>button</code> HTML element represents a clickable button, used to
+                submit forms or anywhere in a document for accessible, standard button functionality. </p>
             <div class="elem-container">
                 <button class="favorite styled" type="button">
                     Add to favorites
@@ -553,6 +789,15 @@
             </div>
 
             <span class="elem-container-title">&lt;label&gt; , &lt;input&gt; , &lt;datalist&gt;</span>
+            <p class="elem-description"> The <code>label</code> HTML element represents a caption for an item in a user
+                interface. </p>
+            <p class="elem-description"> The <code>input</code> HTML element is used to create interactive controls for
+                web-based forms in order to accept data from the user; a wide variety of types of input data and control
+                widgets are available, depending on the device and user agent. The <input> element is one of the most
+                powerful and complex in all of HTML due to the sheer number of combinations of input types and
+                attributes. </p>
+            <p class="elem-description"> The <code>datalist</code> HTML element contains a set of option elements that
+                represent the permissible or recommended options available to choose from within other controls. </p>
             <div class="elem-container">
                 <label for="ice-cream-choice">Choose a flavor:</label>
                 <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
@@ -565,7 +810,13 @@
                 </datalist>
             </div>
 
-            <span class="elem-container-title">&lt;form&gt; , &lt;fieldset&gt; , &lt;legend&gt; , &lt;input&gt; , &lt;label&gt;</span>
+            <span class="elem-container-title">&lt;form&gt; , &lt;fieldset&gt; , &lt;legend&gt;</span>
+            <p class="elem-description"> The <code>form</code> HTML element represents a document section containing
+                interactive controls for submitting information. </p>
+            <p class="elem-description"> The <code>fieldset</code> HTML element is used to group several controls as
+                well as labels (label) within a web form. </p>
+            <p class="elem-description"> The <code>legend</code> HTML element represents a caption for the content of
+                its parent fieldset. </p>
             <div class="elem-container">
                 <form>
                     <fieldset>
@@ -584,6 +835,13 @@
             </div>
 
             <span class="elem-container-title">&lt;select&gt; , &lt;optgroup&gt; , &lt;option&gt;</span>
+            <p class="elem-description"> The <code>select</code> HTML element represents a control that provides a menu
+                of options: </p>
+            <p class="elem-description"> The <code>optgroup</code> HTML element creates a grouping of options within a
+                select element. </p>
+            <p class="elem-description"> The <code>option</code> HTML element is used to define an item contained in a
+                select, an optgroup, or a datalist element. As such, <option> can represent menu items in popups and
+                    other lists of items in an HTML document. </p>
             <div class="elem-container">
                 <select id="dino-select">
                     <optgroup label="Theropods">
@@ -599,19 +857,40 @@
                 </select>
             </div>
 
+            <span class="elem-container-title">&lt;meter&gt;</span>
+            <p class="elem-description"> The <code>meter</code> HTML element represents either a scalar value within a known range or a fractional value. </p>
+            <div class="elem-container">
+                Fuel level:
+                <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
+                    at 50/100
+                </meter>
+            </div>
+
+            <span class="elem-container-title">&lt;output&gt;</span>
+        <p class="elem-description"> The <code>output</code> HTML element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action. </p>
+        <div class="elem-container">
+            <output>Result</output>
+        </div>
 
             <span class="elem-container-title">&lt;progress&gt;</span>
+            <p class="elem-description"> The <code>progress</code> HTML element displays an indicator showing the
+                completion progress of a task, typically displayed as a progress bar. </p>
             <div class="elem-container">
                 <progress id="file" max="100" value="70"> 70% </progress>
             </div>
 
             <span class="elem-container-title">&lt;textarea&gt;</span>
+            <p class="elem-description"> The <code>textarea</code> HTML element represents a multi-line plain-text
+                editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for
+                example a comment on a review or feedback form. </p>
             <div class="elem-container">
                 <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...
                 </textarea>
             </div>
 
             <span class="elem-container-title">&lt;details&gt; , &lt;summary&gt;</span>
+            <p class="elem-description"> The <code>details</code> HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the summary element. </p>
+            <p class="elem-description"> The <code>summary</code> HTML element element specifies a summary, caption, or legend for a details element's disclosure box. Clicking the <code>summary</code> element toggles the state of the parent <code>details</code> element open and closed. </p>
             <div class="elem-container">
                 <details>
                     <summary>Details</summary>
@@ -620,6 +899,7 @@
             </div>
 
             <span class="elem-container-title">&lt;dialog&gt;</span>
+            <p class="elem-description"> The <code>dialog</code> HTML element represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow. </p>
             <div class="elem-container">
                 <dialog open>
                     <p>Greetings, one and all!</p>
@@ -627,6 +907,7 @@
             </div>
 
             <span class="elem-container-title">&lt;menu&gt;</span>
+            <p class="elem-description"> The <code>menu</code> HTML element is a semantic alternative to ul. It represents an unordered list of items (represented by li elements), each of these represent a link or other command that the user can activate. </p>
             <div class="elem-container">
                 <menu>
                     <li>Cut</li>
@@ -636,6 +917,7 @@
             </div>
 
             <span class="elem-container-title">&lt;slot&gt;</span>
+            <p class="elem-description"> The <code>slot</code> HTML element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together. </p>
             <div class="elem-container">
                 <div class="attributes">
                     <h4>Attributes</h4>
@@ -646,6 +928,7 @@
             </div>
 
             <span class="elem-container-title">&lt;template&gt;</span>
+            <p class="elem-description"> The <code>template</code> HTML element is a mechanism for holding HTML that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript. </p>
             <div class="elem-container">
                 <template id="productrow">
                     <tr>
