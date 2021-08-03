@@ -3258,7 +3258,7 @@ var pariWebElemsUI = {
                         "element##1": {
                             "name": "img",
                             "attributes": {
-                                "src": "/media/cc0-images/painted-hand-298-332.jpg",
+                                "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-images/painted-hand-298-332.jpg",
                                 "alt": ""
                             },
                             "items": {}
