@@ -18,6 +18,7 @@ input {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(207, 207, 207);
 }
 
 .tab {
@@ -26,18 +27,19 @@ input {
 }
 .tab-label {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1em;
-  color: white;
-  background: #2c3e50;
+  /* color: white;
+  background: #2c3e50; */
   font-weight: bold;
   cursor: pointer;
   /* Icon */
 }
 .tab-label:hover {
-  background: #1a252f;
+  background-color: rgb(211, 211, 211);
+  /* background: #1a252f; */
 }
-.tab-label::after {
+.tab-label::before {
   content: "❯";
   width: 1em;
   height: 1em;
@@ -62,9 +64,9 @@ input {
 }
 
 input:checked + .tab-label {
-  background: #1a252f;
+  background-color: rgb(180, 180, 180);
 }
-input:checked + .tab-label::after {
+input:checked + .tab-label::before {
   transform: rotate(90deg);
 }
 input:checked ~ .tab-content {

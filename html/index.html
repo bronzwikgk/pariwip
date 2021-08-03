@@ -12,33 +12,44 @@
 <body>
 
     <div id="root">
-        <div class="elem-container">
-            <span class="title">&lt;kbd&gt;</span>
-            <div class="accordian">
-                <div class="tabs">
-                    <div class="tab">
-                        <input type="checkbox" id="chck1">
-                        <label class="tab-label" for="chck1">Description</label>
-                        <div class="tab-content">
-                            The <code>kbd</code> HTML element represents a span of inline text denoting textual
-                            user input from a keyboard, voice input, or any other text entry device. By convention, the
-                            user
-                            agent
-                            defaults to rendering the contents of a <code>kbd</code> element using its default monospace
-                            font, although
-                            this is not mandated by the HTML standard.
-                        </div>
-                    </div>
-                    <div class="tab">
-                        <input type="checkbox" id="chck2">
-                        <label class="tab-label" for="chck2">Content</label>
-                        <div class="elem-container tab-content">
-                            <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open developer tools.
-                            </p>
+        <div class="elem-container accordian">
+            <div class="tabs">
+                <div class="tab">
+                    <input type="checkbox" id="chck1">
+                    <label class="tab-label" for="chck1">&lt;kbd&gt;</label>
+                    <div class="tab-content accordian">
+                        <div class="tabs">
+                            <div class="tab">
+                                <input type="checkbox" id="chck2">
+                                <label class="tab-label" for="chck2">Description</label>
+                                <div class="tab-content">
+                                    The <code>kbd</code> HTML element represents a span of inline text denoting textual
+                                    user input from a keyboard, voice input, or any other text entry device. By
+                                    convention,
+                                    the
+                                    user
+                                    agent
+                                    defaults to rendering the contents of a <code>kbd</code> element using its default
+                                    monospace
+                                    font, although
+                                    this is not mandated by the HTML standard.
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <input type="checkbox" id="chck3">
+                                <label class="tab-label" for="chck3">Content</label>
+                                <div class="elem-container tab-content">
+                                    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open developer
+                                        tools.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
 
