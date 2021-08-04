@@ -167,6 +167,8 @@ window.onclick = function (e) {
         target.parentElement.classList.toggle(actionValue);
     } else if (actionType === "switchDoc") {
         switchDoc(actionValue.trim());
+    } else if (actionType === "addDoc") {
+        addItem();
     }
 }
 
@@ -193,28 +195,37 @@ function switchDoc(docID) {
         rootDoc.querySelector('.pageTitle>.backIcon').setAttribute('data-action-value', parentID);
         rootDoc.querySelector('.pageTitle>.title').innerText = dataContainer[docID];
         if (activeNode.descendants.length>0) {
-            getItems();
-        } else{
-            addItem(activeNode, rootDoc);
-        }
+            getItems(activeNode, rootDoc);
+        } 
+        // else{
+        //     addItem(activeNode, rootDoc);
+        // }
         
     }
 }
 
-function getItems() {
+function getItems(node, elem) {
     var rootDoc = document.getElementById('rootDoc'),
-        children = activeNode.descendants,
-        item, tabLabel;
+        children = node.descendants,
+        item, tabLabel, tabContent;
     children.forEach(child=>{
-        CreateEntity.create(itemTemp, rootDoc);
-        item = rootDoc.lastElementChild;
+        CreateEntity.create(itemTemp, elem);
+        item = elem.lastElementChild;
         tabLabel = item.querySelector('.tab:last-child>.tab-label');
+        tabContent = item.querySelector('.tab:last-child>.tab-content');
         tabLabel.children[0].setAttribute('data-action-value', child.value);
         tabLabel.children[1].innerText = dataContainer[child.value];
+        getItems(child, tabContent);
     })
 }
 
 function addItem(node, elem) {
+    if (!node) {
+        node = activeNode;
+    }
+    if (!elem) {
+        elem = document.getElementById('rootDoc');
+    }
     var uid, item, itemTab, itemLabel;
     uid = uniqueID();
     node.add(uid);
@@ -224,7 +235,6 @@ function addItem(node, elem) {
     itemLabel.children[0].setAttribute('data-action-value', uid);
     itemLabel.children[1].innerText = `item id: ${uid}`;
     dataContainer[uid] = itemLabel.children[1].innerText;
-    console.log(item);
 }
 
 (function () {

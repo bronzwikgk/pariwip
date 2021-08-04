@@ -32,6 +32,15 @@ var ui = {
                     }
                 }
             }
+        },
+        "element##1": {
+            "name": "button",
+            "attributes": {
+                "data-action-type": "addDoc"
+            },
+            "items": {
+                "text##0": "Add"
+            }
         }
     }
 }
@@ -85,9 +94,7 @@ var itemTemp = {
                             "attributes": {
                                 "class": "tab-content"
                             },
-                            "items": {
-                                "text##0": "this is content"
-                            }
+                            "items": {}
                         }
                     }
                 }
