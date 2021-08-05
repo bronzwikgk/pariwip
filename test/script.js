@@ -137,6 +137,69 @@ function uniqueID() {
     return `${timmy}-${randy.substr(0,4)}-${randy.substr(4,4)}-${randy.substr(8,4)}`;
 }
 
+const arrayChangeMethod = ['push', 'pop', 'unshift', 'shift', 'splice', 'sort', 'reverse'];
+
+Array.prototype.uniBind = Object.prototype.uniBind = function (obj, hook = (...args) => {
+    console.log(args);
+}) {
+    const mapStore = {};
+    const attachedObj = this;
+    let arrayChanging = false;
+    return new Proxy(obj, {
+        get(target, property, receiver) {
+            const value = target[property];
+            if (operate.isArray(target) && arrayChangeMethod.indexOf(property) > -1) {
+                // we override the array's method
+                return (...args) => {
+                    arrayChanging = true;
+                    value.bind(receiver)(...args);
+                    arrayChanging = false;
+                    hook(target, property, receiver);
+                };
+            }
+            if (mapStore[property] === true) return value;
+            if (operate.isObject(value) || operate.isArray(value)) {
+                attachedObj[property] = value;
+                const proxyValue = mapStore[property] || attachedObj[property].uniBind(value, hook);
+                mapStore[property] = proxyValue;
+                return proxyValue;
+            }
+            mapStore[property] = true;
+            return value;
+        },
+        set(target, property, value) {
+            attachedObj[property] = value;
+            const newVal = (operate.isObject(value) || operate.isArray(value)) ?
+                attachedObj[property].uniBind(value, hook) :
+                value;
+            target[property] = newVal;
+            mapStore[property] = true;
+            if (!arrayChanging) hook(target, property, value);
+            return true;
+        },
+        deleteProperty(target, property) {
+            delete target[property];
+            delete attachedObj[property];
+            delete mapStore[property];
+            if (!arrayChanging) hook();
+            return true;
+        }
+    });
+}
+
+var obj = {};
+var obj2 = {
+    any: "val"
+}
+const fn = () => console.log('we capture a change');
+const proxy = obj.uniBind(obj2, fn);
+console.log(proxy.any = "anyval"); // we capture a change.
+console.log(proxy.objt = {
+    prop: "propVal"
+}); // we capture a change.
+console.log(proxy.objt.prop = "changed value"); // we capture a change.
+console.log(obj, proxy);
+
 // let uid1 = uniqueID(),
 //     uid2 = uniqueID(),
 //     uid3 = uniqueID(),
@@ -159,18 +222,6 @@ function uniqueID() {
 //     console.log(HeapNode.rootNodes);
 // }
 
-window.onclick = function (e) {
-    var target = e.target,
-        actionType = target.getAttribute('data-action-type'),
-        actionValue = target.getAttribute('data-action-value');
-    if (actionType === "accordianToggle") {
-        target.parentElement.classList.toggle(actionValue);
-    } else if (actionType === "switchDoc") {
-        switchDoc(actionValue.trim());
-    } else if (actionType === "addDoc") {
-        addItem();
-    }
-}
 
 var dataContainer = {},
     activeNode = null;
@@ -193,14 +244,14 @@ function switchDoc(docID) {
             parentID = activeNode.parent.value
         }
         rootDoc.querySelector('.pageTitle>.backIcon').setAttribute('data-action-value', parentID);
-        rootDoc.querySelector('.pageTitle>.title').innerText = dataContainer[docID];
-        if (activeNode.descendants.length>0) {
+        rootDoc.querySelector('.pageTitle>.title').innerHTML = dataContainer[docID];
+        if (activeNode.descendants.length > 0) {
             getItems(activeNode, rootDoc);
-        } 
+        }
         // else{
         //     addItem(activeNode, rootDoc);
         // }
-        
+
     }
 }
 
@@ -208,13 +259,13 @@ function getItems(node, elem) {
     var rootDoc = document.getElementById('rootDoc'),
         children = node.descendants,
         item, tabLabel, tabContent;
-    children.forEach(child=>{
+    children.forEach(child => {
         CreateEntity.create(itemTemp, elem);
         item = elem.lastElementChild;
         tabLabel = item.querySelector('.tab:last-child>.tab-label');
         tabContent = item.querySelector('.tab:last-child>.tab-content');
         tabLabel.children[0].setAttribute('data-action-value', child.value);
-        tabLabel.children[1].innerText = dataContainer[child.value];
+        tabLabel.children[1].innerHTML = dataContainer[child.value];
         getItems(child, tabContent);
     })
 }
@@ -234,7 +285,7 @@ function addItem(node, elem) {
     itemLabel = item.querySelector('.tab:last-child>.tab-label');
     itemLabel.children[0].setAttribute('data-action-value', uid);
     itemLabel.children[1].innerText = `item id: ${uid}`;
-    dataContainer[uid] = itemLabel.children[1].innerText;
+    dataContainer[uid] = itemLabel.children[1].innerHTML;
 }
 
 (function () {
@@ -248,10 +299,23 @@ function addItem(node, elem) {
     rootDoc = document.getElementById('rootDoc');
     rootDoc.setAttribute('data-doc-id', initId);
     rootDoc.querySelector('.pageTitle>.title').innerText = `item id: ${rootNode.value}`
-    dataContainer[rootNode.value] = rootDoc.querySelector('.pageTitle>.title').innerText;
+    dataContainer[rootNode.value] = rootDoc.querySelector('.pageTitle>.title').innerHTML;
 
     addItem(rootNode, rootDoc);
     addItem(rootNode, rootDoc);
     console.log(HeapNode.rootNodes);
     console.log(dataContainer);
-})()
+
+    window.onclick = function (e) {
+        var target = e.target,
+            actionType = target.getAttribute('data-action-type'),
+            actionValue = target.getAttribute('data-action-value');
+        if (actionType === "accordianToggle") {
+            target.parentElement.classList.toggle(actionValue);
+        } else if (actionType === "switchDoc") {
+            switchDoc(actionValue.trim());
+        } else if (actionType === "addDoc") {
+            addItem();
+        }
+    }
+})

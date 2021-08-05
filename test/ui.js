@@ -82,7 +82,9 @@ var itemTemp = {
                                 },
                                 "element##1": {
                                     "name": "span",
-                                    "attributes": {},
+                                    "attributes": {
+                                        "contenteditable": "true"
+                                    },
                                     "items": {
                                         "text##0": "Title"
                                     }

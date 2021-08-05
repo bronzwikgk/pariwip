@@ -26,6 +26,7 @@
 .container-float {
     display: block;
     position: fixed;
+    top: 50%;
     width: max-content;
     height: max-content;
     padding: 10px;
@@ -60,7 +61,7 @@
 .container-resizable {
     position: relative;
     box-sizing: border-box;
-    border: 5px solid rgba(119, 119, 119, 0.658) ;
+    border: 1px solid rgba(119, 119, 119, 0.658) ;
     margin: 10px;
     max-width: calc(100vw - 20px);
     max-height: calc(100vh - 20px);
@@ -71,14 +72,14 @@
 .container-resizable>.resizer {
     /* All resizers are positioned absolutely inside the element */
     position: absolute;
-    z-index: 99;
-    background-color: rgb(255, 0, 0);
+    z-index: 9;
+    background-color: transparent;
 }
 
 /* Placed at the bottom side */
 .container-resizable>.resizer-b {
     /* background-color: rgba(255, 75, 20, 0.356); */
-    bottom: -5px;
+    bottom: 0px;
     cursor: s-resize;
     height: 5px;
     left: 0;
@@ -90,7 +91,7 @@
     /* background-color: rgba(255, 75, 20, 0.356); */
     cursor: e-resize;
     height: 100%;
-    right: -5px;
+    right: 0px;
     top: 0;
     width: 5px;
 }
@@ -100,8 +101,8 @@
     cursor: se-resize;
     height: 5px;
     width: 5px;
-    right: -5px;
-    bottom: -5px;
+    right: 0px;
+    bottom: 0px;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////// */
@@ -129,6 +130,7 @@
 .collapse-icon{
     position: relative;
     left: 0;
+    top: -10px;
     padding: 5px 20px;
     background-color: #eee;
     box-sizing: border-box;
