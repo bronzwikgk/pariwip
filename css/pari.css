@@ -16,13 +16,16 @@
 @import url('utils/typography.css');
 
 /* Components */
-@import url('components/containers.css');
 @import url('components/accordian.css');
+@import url('components/containers.css');
+@import url('components/dropdown.css');
+@import url('components/tooltip.css');
+@import url('components/navbar.css');
 /* grid */
-@import url('grid/columns.css');
+/* @import url('grid/columns.css'); */
 
 /* elements */
-@import url('elements/sidebar.css');
+/* @import url('elements/sidebar.css');
 @import url('elements/navbar.css');
 @import url('elements/card.css');
 @import url('elements/label.css');
@@ -32,4 +35,4 @@
 @import url('elements/alert.css');
 @import url('elements/message-box.css');
 @import url('elements/message.css');
-@import url('elements/tag.css');
+@import url('elements/tag.css'); */

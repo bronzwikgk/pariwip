@@ -1,7 +1,7 @@
 .container-block {
     display: block;
     position: relative;
-    width: calc(100%-10px);
+    max-width: calc(100%-10px);
     height: auto;
     padding: 10px;
     border-radius: 10px;
@@ -12,11 +12,18 @@
     display: flex;
     width: max-content;
     height: auto;
-    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
+}
+
+.container-flex.flex-row {
+    flex-flow: row wrap;
+}
+
+.container-flex.flex-column{
+    flex-flow: column wrap;
 }
 
 
