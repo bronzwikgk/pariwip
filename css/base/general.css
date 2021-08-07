@@ -1,51 +1,23 @@
-*::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
-}
-*::-webkit-scrollbar:hover{
-    width: 15px;
-    height: 15px;
-}
-*::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.1);
-}
-*::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: rgb(185, 185, 185);
-}
-*::-webkit-scrollbar-thumb:hover {
-    background: rgb(170, 170, 170);
-}
-*::-webkit-scrollbar-thumb:active {
-    background: rgb(165, 165, 165);
-}
-
 html {
+    /* font size and scaling */
     line-height: var(--default-line-height);
     font-size: var(--default-font-size);
+
+    /* color */
     color: var(--default-font-color);
 }
 
-@media screen and (max-width: 1280px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    html {
-        font-size: 13px;
-    }
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
+    background-color: var(--default-bg-color);
+    color: var(--default-color);
     font-family: var(--default-font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -54,40 +26,21 @@ body {
 }
 
 a {
-    text-decoration: none;
     color: var(--default-link-color-unvisited);
 }
 
-section,
-.section {
+/* Horizontal rule */
+
+hr {
+    height: 1px;
+}
+
+section {
     position: relative;
-    padding: 54px 0;
 }
 
-@media screen and (max-width: 1280px) {
 
-    section,
-    .section {
-        padding: 36px 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    section,
-    .section {
-        padding: 22px 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    section,
-    .section {
-        padding: 16px 0;
-    }
-}
-
+/* To be removed */
 .wrapper {
     display: flex;
     flex-direction: column;

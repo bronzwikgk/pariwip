@@ -318,4 +318,4 @@ function addItem(node, elem) {
             addItem();
         }
     }
-})
+})();

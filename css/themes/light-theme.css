@@ -1,18 +1,20 @@
 :root{
     /* Font */
-    --default-font: var(--montserrat-font);
-    /* Size */
+    --default-font: var(--montserrat-font, Arial);
+    /*Font Size */
     --default-font-size: var(--normal-font-size);
     --up-font-size: var(--big-font-size);
     --down-font-size: var(--small-font-size);
 
     /* Colors */
-    --default-bg-color: var(--lighter-color);
-    --default-font-color: var(--darker-color);
-    --alt-font-color: var(--lighter-color);
-    --placeholder-color: var(--regular-light-color);
-    --default-border-color: var(--light-color);
-    --alt-border-color: var(--dark-color);
+    --default-bg-color: var(--xtra-light-color, #ffffff);
+    --default-color: var(--darker-color);
+    --alt-color: var(--lighter-color);
+    --default-font-color: var(--xtra-dark-color);
+    --alt-font-color: var(--xtra-light-color);
+    --placeholder-color: var(--regular-color);
+    --default-border-color: var(--regular-dark-color);
+    --alt-border-color: var(--regular-light-color);
     --default-button-bg-color: var(--xtra-light-color);
     /* Link Color */
     --default-link-color-unvisited: var(--darker-color);
@@ -25,7 +27,7 @@
 
     /* Card */
     --default-card-bg-color: var(--light-color);
-    --alt-card-bg-color: var(--dark-color);
+    --alt-card-bg-color: var(--darker-color);
 
     /* Message, Alert, Popup Color */
     --default-float-container-bg-color: var(--light-color);

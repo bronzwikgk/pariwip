@@ -14,15 +14,15 @@
   /* --neutral-primary-color: #303133;
   --neutral-secondary-color: #909399; */
   --black-color: #000000;
-  --xtra-dark-color: #111111;
-  --darker-color: #262626;
+  --xtra-dark-color: #0f0f0f;
+  --darker-color: #1a1a1a;
   --dark-color: #383838;
-  --regular-dark-color: #5e5e5e;
-  --regular-color: #777777;
-  --regular-light-color: #a1a1a1;
-  --light-color: #cccccc;
-  --lighter-color: #e0e0e0;
-  --xtra-light-color: #f1f1f1;
+  --regular-dark-color: #7c7c7c;
+  --regular-color: #b4b4b4;
+  --regular-light-color: #d8d8d8;
+  --light-color: #e9e9e9;
+  --lighter-color: #f0f0f0;
+  --xtra-light-color: #fcfcfc;
   --white-color: #ffffff;
   /* --placeholder-color: #cccccc; */
   --purple-color: #8854d0;
@@ -46,7 +46,7 @@
   /* Line Size*/
   --default-line-height: 1.4;
 
-  /* Animation */
+  /* Transitions */
   --transition-1: all .25s cubic-bezier(.02, .01, .47, 1);
 
   /* Buttons */
