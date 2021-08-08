@@ -1,14 +1,14 @@
 /* Style Normalization */
-@import url('base/reset.css');
+@import url('base/pari-naked.css');
 
 /* Resources */
-@import url('base/fonts.css');
-@import url('base/animation.css');
-@import url('utils/vars.css');
-@import url('base/scroll-bars.css');
+@import url('base/pari-fonts.css');
+@import url('base/pari-animations.css');
+@import url('utils/pari-vars.css');
+@import url('base/pari-scroll-bars.css');
 
 /* general styling */
-@import url('base/general.css');
+@import url('base/pari-default.css');
 @import url('base/media-queries.css');
 /* @import url('utils/mixin.css'); */
 
@@ -20,7 +20,9 @@
 @import url('components/containers.css');
 @import url('components/dropdown.css');
 @import url('components/tooltip.css');
-@import url('components/navbar.css');
+@import url('components/nav-tabs.css');
+@import url('components/breadcrumb.css');
+/* @import url('components/navbar.css'); */
 /* grid */
 /* @import url('grid/columns.css'); */
 
