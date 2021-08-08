@@ -1,3 +1,8 @@
+/* 
+Pari-Default CSS Creates a default theme for the native HTML element, without any sugar coating.
+They Look pretty by themself.
+Important : Keep it after the Pari-Naked CSS.
+*/
 html {
     /* font size and scaling */
     line-height: var(--default-line-height);

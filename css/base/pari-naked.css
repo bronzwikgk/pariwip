@@ -1,4 +1,7 @@
-/* Pari CSS */
+/* 
+Pari-naked CSS reset's the dom to the current config as in the ruleSet below.
+Important to keep it at the top of the page load, above any other CSS stylesheet, else bad things will happen.
+*/
 * {
   box-sizing: border-box;
   width: auto;
