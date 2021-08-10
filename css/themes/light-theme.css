@@ -1,6 +1,7 @@
 :root{
     /* Font */
-    --default-font: var(--montserrat-font, Arial);
+    --default-font: var(--poppins-font, Arial);
+    /* --alt-font: var(--montserrat-font, Arial); */
     /*Font Size */
     --default-font-size: var(--normal-font-size);
     --up-font-size: var(--big-font-size);
@@ -12,7 +13,9 @@
     --alt-color: var(--lighter-color);
     --default-font-color: var(--xtra-dark-color);
     --alt-font-color: var(--xtra-light-color);
-    --placeholder-color: var(--regular-color);
+    --light-placeholder-color: var(--light-color);
+    --default-placeholder-color: var(--regular-color);
+    --dark-placeholder-color: var(--dark-color);
     --default-border-color: var(--regular-dark-color);
     --alt-border-color: var(--regular-light-color);
     --default-button-bg-color: var(--xtra-light-color);

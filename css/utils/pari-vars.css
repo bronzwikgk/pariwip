@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+
 :root {
   /* Breakpoints */
   --desktop-width: 1280px;
@@ -35,6 +37,7 @@
   /* Font */
   /* style */
   --montserrat-font: 'Montserrat', Helvetica, Arial, sans-serif;
+  --poppins-font: 'Poppins', Arial, sans-serif;
   /* Size */
   --big-font-size: 18px;
   --normal-font-size: 16px;

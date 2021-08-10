@@ -64,9 +64,8 @@
   transform: translate(100%, 0);
 }
 
-/* Dropdown on hover / default dropdown in case of abscence of required attribute */
-.dropdown[data-dropdown-type="hover"]:hover .dropdown-content,
-.dropdown:not([data-dropdown-type]):hover .dropdown-content {
+/* Dropdown on hover */
+.dropdown[data-dropdown-type="hover"]:hover .dropdown-content {
   display: block;
 }
 

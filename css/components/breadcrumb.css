@@ -1,7 +1,8 @@
 .breadcrumb {
     position: relative;
     width: 100%;
-    padding: .2em .5em;
+    height: auto;
+    padding: 0 .5em;
     background-color: var(--default-bg-color);
     user-select: none;
 }
@@ -11,9 +12,11 @@
 }
 
 .breadcrumb li {
-    display: inline;
-    color: var(--placeholder-color);
+    display: inline-block;
+    color: var(--default-placeholder-color);
+    vertical-align: middle;
     font-size: 0.8em;
+    line-height: 0.8;
 }
 
 .breadcrumb li:not(:last-child)::after {
@@ -21,16 +24,16 @@
 }
 
 .breadcrumb li a{
-    color: var(--placeholder-color);
+    color: var(--default-placeholder-color);
     text-decoration: none;
 }
 
 .breadcrumb li a:hover,
-.breadcrumb li.active a{
+.breadcrumb li:last-child a{
     color: var(--default-font-color);
 }
 
-.breadcrumb li:not(.active) a:hover
+.breadcrumb li:not(:last-child) a:hover
 {
     text-decoration: underline;
 }
