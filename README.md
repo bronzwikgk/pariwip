@@ -1,7 +1,7 @@
 *a work in progress repo for shunyaTech internal team.
 
-a one of a kind stylesheet for stylesheets.
-[  currently for client side rendering in dom ]
+a one of a kind stylesheet for stylesheets || style-statement.
+a style statement
 --
 pari, an extremely light and super fast CSS framework, works like a blueprint for your next design project.
 
