@@ -1,17 +1,5 @@
-.tooltip {
-    position: relative;
-    display: inline-block;
-    top: 100px;
-    left: 30%;
-    background-color: blue;
-
-    /* If you want dots under the hoverable text */
-    /* border-bottom: 1px dotted black; */
-    
-}
-
 /* Tooltip text */
-.tooltip tooltip-text {
+.tooltip tool-tip {
     display: block;
     position: absolute;
     width: max-content;
@@ -26,12 +14,12 @@
     z-index: 9;
 }
 
-.tooltip:hover tooltip-text {
+.tooltip:hover tool-tip {
     visibility: visible;
     opacity: 1;
 }
 
-.tooltip tooltip-text::after {
+.tooltip tool-tip[data-tooltip-arrow="true"]::after {
     content: " ";
     position: absolute;
     border-width: 5px;
@@ -40,52 +28,52 @@
 }
 
 /* Top */
-.tooltip tooltip-text[data-tooltip-position="top"] {
+.tooltip tool-tip[data-tooltip-position="top"][data-tooltip-arrow="true"] {
     top: -5px;
     left: 50%;
     transform: translate(-50%, -100%);
 }
 
-.tooltip tooltip-text[data-tooltip-position="top"]::after {
+.tooltip tool-tip[data-tooltip-position="top"][data-tooltip-arrow="true"]::after {
     border-top-color: black;
     bottom: -10px;
     left: calc(50% - 5px);
 }
 
 /* Bottom */
-.tooltip tooltip-text[data-tooltip-position="bottom"] {
+.tooltip tool-tip[data-tooltip-position="bottom"][data-tooltip-arrow="true"] {
     bottom: -5px;
     left: 50%;
     transform: translate(-50%, 100%);
 }
 
-.tooltip tooltip-text[data-tooltip-position="bottom"]::after {
+.tooltip tool-tip[data-tooltip-position="bottom"][data-tooltip-arrow="true"]::after {
     border-bottom-color: black;
     top: -10px;
     left: calc(50% - 5px);
 }
 
 /* Left */
-.tooltip tooltip-text[data-tooltip-position="left"] {
+.tooltip tool-tip[data-tooltip-position="left"][data-tooltip-arrow="true"] {
     top: 50%;
     left: -5px;
     transform: translate(-100%, -50%);
 }
 
-.tooltip tooltip-text[data-tooltip-position="left"]::after {
+.tooltip tool-tip[data-tooltip-position="left"][data-tooltip-arrow="true"]::after {
     border-left-color: black;
     top: calc(50% - 5px);
     left: 100%;
 }
 
 /* Right */
-.tooltip tooltip-text[data-tooltip-position="right"] {
+.tooltip tool-tip[data-tooltip-position="right"][data-tooltip-arrow="true"] {
     top: 50%;
     right: -5px;
     transform: translate(100%, -50%);
 }
 
-.tooltip tooltip-text[data-tooltip-position="right"]::after {
+.tooltip tool-tip[data-tooltip-position="right"][data-tooltip-arrow="true"]::after {
     border-right-color: black;
     top: calc(50% - 5px);
     left: -10px;

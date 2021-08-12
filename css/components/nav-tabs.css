@@ -7,10 +7,17 @@
 .nav-tabs .tab-links {
     display: block;
     width: 100%;
+    max-width: 100%;
     min-width: 100%;
     height: 2.1em;
     background-color: rgb(241, 241, 241);
     overflow: auto;
+}
+
+.nav-tabs .tab-links>*:first-child{
+    width: max-content;
+    /* max-width:1000%; */
+    height: 100%;
 }
 
 .nav-tabs .tab-link {
@@ -33,7 +40,7 @@
     background-color: rgb(224, 224, 224);
 }
 
-.nav-tabs .tab-link::before{
+.nav-tabs .tab-link[data-title-icon="true"]::before{
     content: '\2620';
     display: inline-block;
     padding: 3px;
@@ -71,7 +78,6 @@
     position: relative;
     width: 100%;
     height: calc(100% - 2.1em);
-    background-color: teal;
 }
 .nav-tabs .tab-content {
     position: relative;
